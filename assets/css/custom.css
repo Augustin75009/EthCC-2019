@@ -3,6 +3,10 @@
 	border-radius: 50%;
 }
 
+ul.sponsors li {
+	padding: 0 3rem 1rem 0;
+}
+
 .ml1 {
 	font-weight: 900;
 	font-size: 3.5em;
