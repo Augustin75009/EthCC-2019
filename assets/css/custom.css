@@ -3,6 +3,21 @@
 	border-radius: 50%;
 }
 
+.book {
+	background-color: #eeeeee;
+}
+.sponsorgold {
+	width: 300px;
+}
+
+.sponsorsilver {
+	width: 250px;
+}
+
+ul.sponsors li {
+	padding: 0 4rem 1rem 0;
+}
+
 .ml1 {
 	font-weight: 900;
 	font-size: 3.5em;
