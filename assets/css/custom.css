@@ -3,6 +3,26 @@
 	border-radius: 50%;
 }
 
+.book {
+	background-color: #eeeeee;
+}
+.sponsorgold {
+	width: 300px;
+}
+
+.sponsorsilver {
+	width: 200px;
+}
+
+.sponsorbronze {
+	width: 190px;
+	max-height: 120px;
+}
+
+ul.sponsors li {
+	padding: 0 3rem 0rem 0;
+}
+
 .ml1 {
 	font-weight: 900;
 	font-size: 3.5em;
