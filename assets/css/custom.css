@@ -19,6 +19,14 @@
 	max-height: 120px;
 }
 
+.sponsoriron {
+	height: 70px;
+}
+
+.partner {
+	height: 80px;
+}
+
 ul.sponsors li {
 	padding: 0 3rem 0rem 0;
 }
