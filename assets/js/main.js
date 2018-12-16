@@ -352,6 +352,17 @@
 
 							});
 
+
+		      var speakersRow = $('#speakersRow');
+		      var speakerTemplate = $('#speakerTemplate');
+
+		      for (i = 0; i < speakers.length; i ++) {
+		        speakerTemplate.find('.name').text(speakers[i].name);
+		        speakerTemplate.find('img').attr('src', speakers[i].picture);
+		        speakerTemplate.find('.company').text(speakers[i].company);
+		        speakersRow.append(speakerTemplate.html());
+		      }
+
 	});
 
 })(jQuery);
