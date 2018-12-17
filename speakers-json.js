@@ -1,10 +1,5 @@
 var speakers = [
   {
-    "name": "E.G. Galano",
-    "picture": "images/speakers/1.png",
-    "company": "",
-  },
-  {
     "name": "Christoph Jentzsch",
     "picture": "images/speakers/1.png",
     "company": "",
