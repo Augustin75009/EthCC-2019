@@ -30,7 +30,6 @@
 					<section id="bandner" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 
-
 							<h1>Ethereum Community Conference</h1>
 							<h1 class="ml1">
 								<span class="text-wrapper">
@@ -38,17 +37,17 @@
 									<span class="letters">EthCC</span>
 									<span class="line line2"></span>
 								</span>
-							</h1>
+							</h1>	
 
 							<h2>2019 edition, 5th, 6th, 7th <br/>March 2019 in Paris</h2>
-							<!--<p class="major">Community-driven conference on Ethereum technology and projects.</p>-->
 							<ul class="actions vertical">
 								<li>
-									<a href="ethcc-2018/index.html" class="button big special wide smooth-scroll-middle">EthCC 2018</a>
-                  <a href="https://www.weezevent.com/ethereum-community-conference-2019" class="button big special wide smooth-scroll-middle" target= "_blank">Book now</a>
-
+									<a href="ethcc-2018/index.html" class="button big wide smooth-scroll-middle">EthCC 2018</a>
+                  
+                  					<a href="https://www.weezevent.com/ethereum-community-conference-2019" class="button big special wide smooth-scroll-middle" target= "_blank">Book now</a>
 								</li>
 							</ul>
+							🚀 Announcing the first batch of <a class="smooth-scroll" href="#speakersSection">speakers</a>
 
 						</div>
 						<div class="image">
@@ -56,10 +55,22 @@
 						</div>
 					</section>
 
+					
 
+					<section  class="wrapper style1 align-center pad-top" id="speakersSection">
+						<h2>Speakers</h2>
+						<div id="speakersRow" class="items style1 medium onscroll-fade-in"></div>
+					</section>
 
-
-				<!-- Footer -->
+					<div id="speakerTemplate" style="display: none;">
+					<section>
+						<img class="speaker picture" src="" alt="" />
+						<h3 class="name"></h3>
+						<h5 class="company"></h5>
+					</section>
+					</div>
+					
+					<!-- Footer -->
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
@@ -81,6 +92,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/anime.min.js"></script>
 			<script src="assets/js/intro.js"></script>
+			<script src="./speakers-json.js"></script>
 
 	</body>
 </html>
