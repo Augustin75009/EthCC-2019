@@ -121,7 +121,7 @@ var speakers = [
   },
   {
     "name": "Corbin Page",
-    "picture": "images/speakers/25.PNG",
+    "picture": "images/speakers/25.png",
     "company": "",
   },
 ]
