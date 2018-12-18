@@ -133,5 +133,10 @@ var speakers = [
     "name": "Robert Habermeier",
     "picture": "images/speakers/27.png",
     "company": "Polkadot",
+  },
+  {
+    "name": "More to be announced",
+    "picture": "images/speakers/cat.png",
+    "company": "Stay tuned next Monday",
   }
 ]
