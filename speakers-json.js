@@ -11,11 +11,13 @@ var speakers = [
   },
   {
     "name": "Vlad Zamfir",
+    "link": "https://twitter.com/VladZamfir",
     "picture": "images/speakers/3.png",
     "company": "Ethereum Foundation",
   },
   {
     "name": "E.G. Galano",
+    "link": "",
     "picture": "images/speakers/4.png",
     "company": "Infura",
   },
