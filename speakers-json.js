@@ -240,7 +240,7 @@ var speakers = [
   {
     "name": "Sergey Nazarov",
     "link": "https://www.chain.link",
-    "picture": "images/speakers/48.png",
+    "picture": "images/speakers/48.jpg",
     "company": "Chainlink",
   },
   {
