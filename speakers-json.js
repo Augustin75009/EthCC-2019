@@ -137,6 +137,113 @@ var speakers = [
     "company": "Polkadot",
   },
   {
+    "name": "Fabian Vogelsteller",
+    "picture": "images/speakers/28.png",
+    "company": "LUKSO",
+  },
+  {
+    "name": "Pavlo Makarov",
+    "picture": "images/speakers/29.jpg",
+    "company": "",
+  },
+  {
+    "name": "Anna Makota",
+    "picture": "images/speakers/30.jpeg",
+    "company": "DApp DEV",
+  },
+  {
+    "name": "Daniel Kronovet",
+    "picture": "images/speakers/31.jpg",
+    "company": "Colony.io",
+  },
+  {
+    "name": "QJ Wang",
+    "link" : "https://twitter.com/qijun_wang",
+    "picture": "images/speakers/32.jpg",
+    "company": "Ethereum Community Fund",
+  },
+  {
+    "name": "Cassius Kiani",
+    "picture": "images/speakers/33.jpeg",
+    "company": "Atlas Neue",
+  },
+  {
+    "name": "Gregor Žavcer",
+    "picture": "images/speakers/34.png",
+    "company": "Datafund / Fair data society",
+  },
+  {
+    "name": "Louis Millon",
+    "picture": "images/speakers/35.jpeg",
+    "company": "Universal Reward Protocol",
+  },
+  {
+    "name": "Lucas Vogelsang",
+    "picture": "images/speakers/36.jpg",
+    "company": "Centrifuge",
+  },
+  {
+    "name": "Augusto Hack",
+    "picture": "images/speakers/37.jpeg",
+    "company": "Raiden Network",
+  },
+  {
+    "name": "Vincent Eli",
+    "picture": "images/speakers/38.jpeg",
+    "company": "MetaMask",
+  },
+  {
+    "name": "Primavera de Filippi",
+    "picture": "images/speakers/39.png",
+    "company": "CNRS / DAOstack",
+  },
+  {
+    "name": "Adrian Brink",
+    "picture": "images/speakers/40.png",
+    "company": "Cryptium Labs / Web3 Foundation / Cosmos",
+  },
+  {
+    "name": "Awa Sun Yin",
+    "picture": "images/speakers/41.jpg",
+    "company": "Cryptium Labs",
+  },
+  {
+    "name": "James Pitt",
+    "picture": "images/speakers/42.png",
+    "company": "Fellowship of Ethereum Magicians",
+  },
+  {
+    "name": "Sunny Aggarwal",
+    "picture": "images/speakers/43.png",
+    "company": "Cosmos",
+  },
+  {
+    "name": "Stefan George",
+    "picture": "images/speakers/44.png",
+    "company": "Gnosis",
+  },
+  {
+    "name": "Thibauld Favre",
+    "picture": "images/speakers/45.jpeg",
+    "company": "Continuous Organizations",
+  },
+  {
+    "name": "Griff Green",
+    "picture": "images/speakers/46.png",
+    "company": "Giveth / Aragon",
+  },
+  {
+    "name": "Yalda Mousavinia",
+    "picture": "images/speakers/47.png",
+    "company": "Space Decentral",
+  },
+  {
+    "name": "Sergey Nazarov",
+    "link": "https://www.chain.link",
+    "picture": "images/speakers/48.png",
+    "company": "Chainlink",
+  },
+  {
     "name": "More to be announced",
     "picture": "images/speakers/cat.png",
     "company": "Stay tuned next Monday",
