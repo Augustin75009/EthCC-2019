@@ -33,7 +33,7 @@ var speakers = [
   },  
   {
     "name": "Nick Gheorghita",
-    "picture": "images/speakers/7.jpeg",
+    "picture": "images/speakers/7.png",
     "company": "Ethereum Foundation",
   },
   {
@@ -58,12 +58,12 @@ var speakers = [
   },
   {
     "name": "Tyler Mulvihill",
-    "picture": "images/speakers/12.jpg",
+    "picture": "images/speakers/12.png",
     "company": "Viant",
   },
     {
     "name": "Kevin Owocki",
-    "picture": "images/speakers/13.jpg",
+    "picture": "images/speakers/13.png",
     "company": "Gitcoin",
   },
   {
@@ -78,12 +78,12 @@ var speakers = [
   },
   {
     "name": "Simona Pop",
-    "picture": "images/speakers/16.jpg",
+    "picture": "images/speakers/16.png",
     "company": "Bounties Network",
   },
   {
     "name": "Dean Eigenmann",
-    "picture": "images/speakers/17.jpg",
+    "picture": "images/speakers/17.png",
     "company": "Ethereum Name System",
   },
   {
@@ -103,7 +103,7 @@ var speakers = [
   },
   {
     "name": "Will Harborne",
-    "picture": "images/speakers/21.jpg",
+    "picture": "images/speakers/21.png",
     "company": "Ethfinex",
   },
    {
@@ -143,28 +143,28 @@ var speakers = [
   },
   {
     "name": "Pavlo Makarov",
-    "picture": "images/speakers/29.jpg",
+    "picture": "images/speakers/29.png",
     "company": "",
   },
   {
     "name": "Anna Makota",
-    "picture": "images/speakers/30.jpeg",
+    "picture": "images/speakers/30.png",
     "company": "DApp DEV",
   },
   {
     "name": "Daniel Kronovet",
-    "picture": "images/speakers/31.jpg",
+    "picture": "images/speakers/31.png",
     "company": "Colony.io",
   },
   {
     "name": "QJ Wang",
     "link" : "https://twitter.com/qijun_wang",
-    "picture": "images/speakers/32.jpg",
+    "picture": "images/speakers/32.png",
     "company": "Ethereum Community Fund",
   },
   {
     "name": "Cassius Kiani",
-    "picture": "images/speakers/33.jpeg",
+    "picture": "images/speakers/33.png",
     "company": "Atlas Neue",
   },
   {
@@ -174,22 +174,22 @@ var speakers = [
   },
   {
     "name": "Louis Millon",
-    "picture": "images/speakers/35.jpeg",
+    "picture": "images/speakers/35.png",
     "company": "Universal Reward Protocol",
   },
   {
     "name": "Lucas Vogelsang",
-    "picture": "images/speakers/36.jpg",
+    "picture": "images/speakers/36.png",
     "company": "Centrifuge",
   },
   {
     "name": "Augusto Hack",
-    "picture": "images/speakers/37.jpeg",
+    "picture": "images/speakers/37.png",
     "company": "Raiden Network",
   },
   {
     "name": "Vincent Eli",
-    "picture": "images/speakers/38.jpeg",
+    "picture": "images/speakers/38.png",
     "company": "MetaMask",
   },
   {
@@ -204,7 +204,7 @@ var speakers = [
   },
   {
     "name": "Awa Sun Yin",
-    "picture": "images/speakers/41.jpg",
+    "picture": "images/speakers/41.png",
     "company": "Cryptium Labs",
   },
   {
@@ -224,7 +224,7 @@ var speakers = [
   },
   {
     "name": "Thibauld Favre",
-    "picture": "images/speakers/45.jpeg",
+    "picture": "images/speakers/45.png",
     "company": "Continuous Organizations",
   },
   {
@@ -240,7 +240,7 @@ var speakers = [
   {
     "name": "Sergey Nazarov",
     "link": "https://www.chain.link",
-    "picture": "images/speakers/48.jpg",
+    "picture": "images/speakers/48.png",
     "company": "Chainlink",
   },
   {
