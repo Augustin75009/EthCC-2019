@@ -244,6 +244,56 @@ var speakers = [
     "company": "Chainlink",
   },
   {
+    "name": "Adan Sanchez De Pedro",
+    "picture": "images/speakers/49.png",
+    "company": "Witnet",
+  },
+  {
+    "name": "Andrés Junge",
+    "picture": "images/speakers/50.png",
+    "company": "uPort",
+  },
+  {
+    "name": "Patrick McCorry",
+    "picture": "images/speakers/51.png",
+    "company": "King's College London",
+  },
+  {
+    "name": "Griffin Anderson",
+    "picture": "images/speakers/52.png",
+    "company": "Balanc3",
+  },
+  {
+    "name": "Jack Spallone",
+    "picture": "images/speakers/53.png",
+    "company": "Ujo Music",
+  },
+  {
+    "name": "MacLane Wilkison",
+    "picture": "images/speakers/54.png",
+    "company": "NuCypher",
+  },
+  {
+    "name": "Matias Nisenson",
+    "picture": "images/speakers/55.png",
+    "company": "Experimental",
+  },
+  {
+    "name": "Raphael Mazet",
+    "picture": "images/speakers/56.png",
+    "company": "Alice",
+  },
+  {
+    "name": "Benjamin Smith",
+    "picture": "images/speakers/57.png",
+    "company": "Gnosis",
+  },
+  {
+    "name": "Hugh Karp",
+    "picture": "images/speakers/58.png",
+    "company": "Nexus Mutual",
+  },
+  {
     "name": "More to be announced",
     "picture": "images/speakers/cat.png",
     "company": "Stay tuned next Monday",
