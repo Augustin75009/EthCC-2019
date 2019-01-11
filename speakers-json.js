@@ -279,9 +279,9 @@ var speakers = [
     "company": "Experimental",
   },
   {
-    "name": "Raphael Mazet",
+    "name": "Loredana Cirstea",
     "picture": "images/speakers/56.png",
-    "company": "Alice",
+    "company": "Raiden Network",
   },
   {
     "name": "Benjamin Smith",
@@ -292,6 +292,56 @@ var speakers = [
     "name": "Hugh Karp",
     "picture": "images/speakers/58.png",
     "company": "Nexus Mutual",
+  },
+  {
+    "name": "Raphael Mazet",
+    "picture": "images/speakers/59.png",
+    "company": "Alice",
+  },
+  {
+    "name": "Amaury Martiny",
+    "picture": "images/speakers/60.png",
+    "company": "Parity",
+  },
+  {
+    "name": "Jean Millerat",
+    "picture": "images/speakers/61.png",
+    "company": "Conseil Départemental des Hauts-de-Seine",
+  },
+  {
+    "name": "Angel Versetti",
+    "picture": "images/speakers/62.png",
+    "company": "Ambrosus",
+  },
+  {
+    "name": "Max Stein",
+    "picture": "images/speakers/63.png",
+    "company": "Balanc3",
+  },
+  {
+    "name": "Tobias Schubotz",
+    "picture": "images/speakers/64.png",
+    "company": "Gnosis Safe",
+  },
+  {
+    "name": "Lorenz Breidenbach",
+    "picture": "images/speakers/65.png",
+    "company": "LibSubmarine",
+  },
+  {
+    "name": "Charles St.Louis",
+    "picture": "images/speakers/66.png",
+    "company": "Polymath Network",
+  },
+  {
+    "name": "Christoph Mussenbrock",
+    "picture": "images/speakers/67.png",
+    "company": "Etherisc",
+  },
+  {
+    "name": "Zachary Williamson",
+    "picture": "images/speakers/68.png",
+    "company": "AZTEC Protocol",
   },
   {
     "name": "More to be announced",
