@@ -2,7 +2,7 @@ var speakers = [
   {
     "name": "Christoph Jentzsch",
     "picture": "images/speakers/1.png",
-    "company": "Slock.it",er
+    "company": "Slock.it",
   },
   {
     "name": "Martin Lundfall",
