@@ -2,7 +2,7 @@ var speakers = [
   {
     "name": "Christoph Jentzsch",
     "picture": "images/speakers/1.png",
-    "company": "Slock.it",
+    "company": "Slock.it",er
   },
   {
     "name": "Martin Lundfall",
@@ -72,7 +72,7 @@ var speakers = [
     "company": "GovernX",
   },
   {
-    "name": "Eric Tang",
+    "name": "Raffi Sapire",
     "picture": "images/speakers/15.png",
     "company": "Livepeer",
   },
