@@ -72,7 +72,7 @@ var speakers = [
     "company": "GovernX",
   },
   {
-    "name": "Eric Tang",
+    "name": "Raffi Sapire",
     "picture": "images/speakers/15.png",
     "company": "Livepeer",
   },
