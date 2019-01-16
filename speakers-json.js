@@ -344,6 +344,86 @@ var speakers = [
     "company": "AZTEC Protocol",
   },
   {
+    "name": "Afri Schoedon",
+    "picture": "images/speakers/69.png",
+    "company": "Parity",
+  },
+  {
+    "name": "Anish Mohammed",
+    "picture": "images/speakers/70.png",
+    "company": "Ontici",
+  },
+  {
+    "name": "Makoto Inoue",
+    "picture": "images/speakers/71.png",
+    "company": "ENS",
+  },
+  {
+    "name": "Jordi Baylina",
+    "picture": "images/speakers/72.png",
+    "company": "Iden3",
+  },
+  {
+    "name": "Thomas Bertani",
+    "picture": "images/speakers/73.png",
+    "company": "Oraclize",
+  },
+  {
+    "name": "Thibaut Sardan",
+    "picture": "images/speakers/74.png",
+    "company": "Parity",
+  },
+  {
+    "name": "William George",
+    "picture": "images/speakers/75.png",
+    "company": "Kleros",
+  },
+  {
+    "name": "Guillaume Ballet",
+    "picture": "images/speakers/76.png",
+    "company": "Ewasm",
+  },
+  {
+    "name": "Jacques Dafflon",
+    "picture": "images/speakers/77.png",
+    "company": "Iden3",
+  },
+  {
+    "name": "Marc Zeller",
+    "picture": "images/speakers/78.png",
+    "company": "Coinhouse",
+  },
+  {
+    "name": "Pelle Braendgaard",
+    "picture": "images/speakers/79.png",
+    "company": "uPort",
+  },
+  {
+    "name": "Aditya Asgaonkar",
+    "picture": "images/speakers/80.png",
+    "company": "Ethereum Foundation",
+  },
+  {
+    "name": "Tomislav Mamić",
+    "picture": "images/speakers/81.png",
+    "company": "BridgeDAO",
+  },
+  {
+    "name": "Alice Henshaw",
+    "picture": "images/speakers/82.png",
+    "company": "ConsenSys",
+  },
+  {
+    "name": "Chris Remus",
+    "picture": "images/speakers/83.png",
+    "company": "ENS",
+  },
+  {
+    "name": "Auryn Macmillan",
+    "picture": "images/speakers/84.png",
+    "company": "Colony",
+  },
+  {
     "name": "More to be announced",
     "picture": "images/speakers/cat.png",
     "company": "Stay tuned next Monday",
