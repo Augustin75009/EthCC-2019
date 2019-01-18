@@ -185,7 +185,7 @@ var speakers = [
   {
     "name": "Augusto Hack",
     "picture": "images/speakers/37.png",
-    "company": "Quodum",
+    "company": "Raiden Network",
   },
   {
     "name": "Vincent Eli",
