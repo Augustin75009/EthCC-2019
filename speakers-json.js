@@ -281,7 +281,7 @@ var speakers = [
   {
     "name": "Loredana Cirstea",
     "picture": "images/speakers/56.png",
-    "company": "Raiden Network",
+    "company": "Quodum",
   },
   {
     "name": "Benjamin Smith",
