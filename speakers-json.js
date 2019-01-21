@@ -381,7 +381,7 @@ var speakers = [
   {
     "name": "Guillaume Ballet",
     "picture": "images/speakers/76.png",
-    "company": "Ewasm",
+    "company": "Ethereum Foundation",
   },
   {
     "name": "Jacques Dafflon",
