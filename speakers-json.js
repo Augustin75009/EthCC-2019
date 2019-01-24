@@ -559,7 +559,7 @@ var speakers = [
     "company": "Polymath"
   },
   {
-    "name": "Jeremy Longley (Sam Wright organising on behalf)",
+    "name": "Jeremy Longley",
     "picture": "images/speakers/112.png",
     "company": "FunFair"
   },
