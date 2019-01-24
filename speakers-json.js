@@ -451,7 +451,7 @@ var speakers = [
   {
     "name": "Rosco Kalis",
     "picture": "images/speakers/90.png",
-    "company": "truffle-assertions"
+    "company": "Incode"
   },
   {
     "name": "Alex Beregszaszi",
