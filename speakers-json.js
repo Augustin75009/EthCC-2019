@@ -624,7 +624,7 @@ var speakers = [
     "company": "Blockchain Name Service"
   },
   {
-    "name": "DApp developer",
+    "name": "Qianchen Yu",
     "picture": "images/speakers/125.png",
     "company": "Validity Labs"
   },
