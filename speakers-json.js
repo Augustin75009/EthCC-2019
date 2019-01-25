@@ -431,7 +431,7 @@ var speakers = [
   {
     "name": "Vidal Chriqui",
     "picture": "images/speakers/86.png",
-    "company": "BTU Protocool"
+    "company": "BTU Protocol"
   },
   {
     "name": "Andrej Bencic",
@@ -686,7 +686,7 @@ var speakers = [
   {
     "name": "Emiel van der Hoek",
     "picture": "images/speakers/137.png",
-    "company": "openAware"
+    "company": "Polkascan & Polkasource"
   },
   {
     "name": "Mike Goelzer",
