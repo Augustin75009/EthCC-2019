@@ -354,19 +354,20 @@
 
 
 		      var speakersRow = $('#speakersRow');
-		      var speakerTemplate = $('#speakerTemplate');
+          var speakerTemplate1 = $('#speakerTemplate1');
+		      // var speakerTemplate = $('#speakerTemplate');
 
 		      for (i = 0; i < speakers.length; i ++) {
 
 		      	if(speakers[i].link != undefined && speakers[i].link != '')	{
 		      		speakerTemplate.find('.name').wrap('<a href="'+speakers[i].link+'"></a>');
 		      	}
-		      	
+
 		        speakerTemplate.find('.name').text(speakers[i].name);
 		        speakerTemplate.find('img').attr('src', speakers[i].picture);
 		        speakerTemplate.find('.company').text(speakers[i].company);
 		        speakersRow.append(speakerTemplate.html());
-		      
+
 		        if (speakerTemplate.find('.name').parent().is( "a" )) {
 				    speakerTemplate.find('.name').unwrap();
 				}
