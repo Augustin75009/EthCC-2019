@@ -7440,7 +7440,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		margin: 3rem 0;
+		/*margin: 3rem 0;*/
 		position: relative;
 	}
 

@@ -81,3 +81,12 @@ ul.sponsors li {
 	table th {
 		padding: 1rem 0.75rem 0.75rem 0.75rem;
 	}
+
+#showMore {
+  margin: 2rem 0;
+}
+
+#speakersRowRest>section {
+  border-bottom-width: 0px;
+  border-top-width: 1px !important;
+}
