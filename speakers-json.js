@@ -711,7 +711,7 @@ var speakers = [
   {
     "name": "Dimitri de Jonge",
     "picture": "images/speakers/142.png",
-    "company": "Ocean"
+    "company": "Ocean Protocol"
   },
   {
     "name": "Antoine Najjarin",
