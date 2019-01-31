@@ -1,0 +1,51 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
+
+body, input, select, textarea, p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300 !important;
+  line-height: 1.65;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: 1.375;
+  letter-spacing: -0.05em;
+  margin: 0 0 1rem 0;
+  font-size: 2.25rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline
+}
+
+a {
+color: #000000;
+}
+
+a:hover {
+  color: #47D3E5;
+}
+
+
+#aboutSection {
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutImage {
+  flex: 3;
+  background-image: url("../../images/main/EthCC-2019.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+#aboutContent {
+  flex: 3;
+  padding: 50px;
+}
+
