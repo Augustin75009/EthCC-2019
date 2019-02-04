@@ -12,8 +12,10 @@
 		<title>EthCC</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/componants.css" />
 		<link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
 	<body>
 
@@ -52,13 +54,32 @@
   </div>
 </section>
 
-<section>
-  <div id="speakersSection">speakers</div>
+<section id="speakersSection">
+  <h2>Speakers</h2>
+  <div id="speakersRow"></div>
+<button id="showMore">See All</button>
 </section>
 
-<section>
-  <div id="footer">footer</div>
-</section>
+<div id="speakerTemplate" style="display: none;">
+  <section>
+    <img class="speaker picture" src="" alt="" />
+    <h3 class="name"></h3>
+    <h5 class="company"></h5>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="inner">
+    <ul class="icons">
+      <li><a href="https://twitter.com/AssethFR" class="icon first"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="mailto:contact@asseth.fr" class="icon"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+    <p>&copy; EthCC. Website: <a href="https://www.linkedin.com/in/nicolas-descreux-39416a115/">Nicolas Descreux</a> & <a href="https://www.augustincousin.com">Augustin Cousin</a>
+  </div>
+</footer>
+
+<script src="speakers-json.js"></script>
+<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
