@@ -25,7 +25,7 @@
       </div>
       <div class="navbar">
         <a href="index.html">
-          <h2>EthCC</h2>
+          <h2 id="logo">EthCC</h2>
         </a>
 
         <!-- displayed on laptops -->
@@ -92,12 +92,12 @@
         document.addEventListener('scroll', (event) => {
             const sh = document.body.scrollHeight;
             const ih = self.innerHeight
+            const w = window.innerWidth
             const blueScroll = document.querySelector(".blue-scroll")
             const greyScroll = document.querySelector(".grey-scroll")
             const y = window.pageYOffset;
-            const h = (y/(sh-ih))*90 +10;
+            const h = (y/(sh-ih))*100 + 120/w*100;
             const hs = Math.ceil(h).toString() + '%';
-            console.log(hs);
             const hg = 100 - h;
             const hgs = Math.ceil(hg).toString() + '%';
             blueScroll.style.width = hs;

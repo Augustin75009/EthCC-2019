@@ -2,7 +2,6 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 55px;
 }
 
 .container-scroll {
@@ -11,12 +10,12 @@
 }
 
 .blue-scroll {
-  width: 10%;
+  width: 120px;
   background: #47D3E5;
 }
 
 .grey-scroll {
-  width: 90%;
+  width: calc(100% - 120px);
   background: lightgrey;
 }
 
@@ -25,10 +24,14 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 0px 24px;
-  border-bottom: 3px solid #47D3E5;
+  padding: 0 24px 0 0;
 }
 
+#logo {
+  width: 120px;
+  text-align: center;
+  border-bottom: 3px solid #47D3E5;
+}
 .navbar .brand {
   width: 40px;
 }
