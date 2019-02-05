@@ -1,4 +1,4 @@
-.navbar-lewagon {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,32 +6,31 @@
   padding: 16px 24px;
 }
 
-.navbar-lewagon .brand {
+.navbar .brand {
   width: 40px;
 }
-
-.navbar-lewagon img {
+.navbar img {
   border-radius: 30%;
 }
 
-.navbar-lewagon .navbar-lewagon-actions {
+.navbar .navbar-actions {
   display: flex;
   align-items: center;
 }
 
-.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link {
+.navbar .navbar-actions .navbar-link {
   margin-left: 24px;
   color: #999999;
 }
-.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link:hover {
+.navbar .navbar-actions .navbar-link:hover {
   color: #151515;
 }
 
 
-.navbar-lewagon .navbar-lewagon-actions .avatar {
+.navbar .navbar-actions .avatar {
   margin-left: 24px;
 }
 
-.navbar-lewagon .dropdown-toggle {
+.navbar .dropdown-toggle {
   cursor: pointer;
 }
