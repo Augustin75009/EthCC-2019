@@ -13,25 +13,30 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/componants.css" />
+		<link rel="stylesheet" href="assets/css/components.css" />
 		<link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
 	<body>
+    <div class="container-navbar">
+      <div class="container-scroll">
+        <div class="blue-scroll"></div>
+        <div class="grey-scroll"></div>
+      </div>
+      <div class="navbar">
+        <a href="index.html">
+          <h2>EthCC</h2>
+        </a>
 
-<div class="navbar">
-  <a href="index.html">
-    <img src="/images/main/EthCC-2019.jpeg" class="brand">
-  </a>
-
-  <!-- displayed on laptops -->
-  <div class="navbar-actions d-none d-sm-flex">
-    <a href="agenda.html" class="navbar-link">Agenda</a>
-    <div class="badge-container">
-      <a href="speakers.html" class="navbar-link">Speakers <span class="badge-container"></a>
+        <!-- displayed on laptops -->
+        <div class="navbar-actions d-none d-sm-flex">
+          <a href="agenda.html" class="navbar-link">Agenda</a>
+          <div class="badge-container">
+            <a href="speakers.html" class="navbar-link">Speakers <span class="badge-container"></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 <section>
   <div id="bannerSection">
@@ -41,49 +46,70 @@
   </div>
 </section>
 
-<section>
-  <div id="aboutSection">
-    <div id="aboutImage"></div>
-    <div id="aboutContent">
-     <h3>About</h3>
-              <p>EthCC 2019 (Ethereum Community Conference) is the second edition of a <b>series of conferences and workshops that bring together and strengthen the international Ethereum community.</b> EthCC will take place in Paris, on March 5th, 6th and 7th. EthCC makes a point of being inclusive. It is non-profit and the tickets are sold at cost price. Everybody is welcome, tech-savvy neophytes and experts, developers and non-techs, students and researchers, ....</p>
-                <br>
-                <br>
-              <h3>During EthCC 2019 you will have the opportunity to: </h3>
-              <ul class="alt">
-                <li>Meet and listen to over <b>250 international speakers</b></li>
-                <li>Catch up with the <b>latest developments on Ethereum</b></li>
-                <li>Have access to <b>multiple tracks</b> : Decentralized Finance, Scalability, Web 3.0, from Zero to Hero, ...</li>
-                <li>Learn <b>new skills</b> through workshops for developers & researchers</li>
-                <li><b>Network</b> with passionate forethinkers</li>
+    <section>
+      <div id="aboutSection">
+        <div id="aboutImage"></div>
+        <div id="aboutContent">
+         <h3>About</h3>
+                  <p>EthCC 2019 (Ethereum Community Conference) is the second edition of a <b>series of conferences and workshops that bring together and strengthen the international Ethereum community.</b> EthCC will take place in Paris, on March 5th, 6th and 7th. EthCC makes a point of being inclusive. It is non-profit and the tickets are sold at cost price. Everybody is welcome, tech-savvy neophytes and experts, developers and non-techs, students and researchers, ....</p>
+                    <br>
+                    <br>
+                  <h3>During EthCC 2019 you will have the opportunity to: </h3>
+                  <ul class="alt">
+                    <li>Meet and listen to over <b>250 international speakers</b></li>
+                    <li>Catch up with the <b>latest developments on Ethereum</b></li>
+                    <li>Have access to <b>multiple tracks</b> : Decentralized Finance, Scalability, Web 3.0, from Zero to Hero, ...</li>
+                    <li>Learn <b>new skills</b> through workshops for developers & researchers</li>
+                    <li><b>Network</b> with passionate forethinkers</li>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakersSection">
+      <h2>Speakers</h2>
+      <div id="speakersRow"></div>
+    <button id="showMore">See All</button>
+    </section>
+
+    <div id="speakerTemplate" style="display: none;">
+      <section>
+        <img class="speaker picture" src="" alt="" />
+        <h3 class="name"></h3>
+        <h5 class="company"></h5>
+      </section>
     </div>
-  </div>
-</section>
 
-<section id="speakersSection">
-  <h2>Speakers</h2>
-  <div id="speakersRow"></div>
-<button id="showMore">See All</button>
-</section>
+    <footer class="footer">
+      <div class="inner">
+        <ul class="icons">
+          <li><a href="https://twitter.com/AssethFR" class="icon first"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:contact@asseth.fr" class="icon"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p>&copy; EthCC. Website: <a href="https://www.linkedin.com/in/nicolas-descreux-39416a115/">Nicolas Descreux</a> & <a href="https://www.augustincousin.com">Augustin Cousin</a>
+      </div>
+    </footer>
+      
+    <script>
+      const initScrollBar = () => {
+        
+        document.addEventListener('scroll', (event) => {
+            const sh = document.body.scrollHeight;
+            const ih = self.innerHeight
+            const blueScroll = document.querySelector(".blue-scroll")
+            const greyScroll = document.querySelector(".grey-scroll")
+            const y = window.pageYOffset;
+            const h = (y/(sh-ih))*90 +10;
+            const hs = Math.ceil(h).toString() + '%';
+            console.log(hs);
+            const hg = 100 - h;
+            const hgs = Math.ceil(hg).toString() + '%';
+            blueScroll.style.width = hs;
+            greyScroll.style.width = hgs;
+          });
+        }
 
-<div id="speakerTemplate" style="display: none;">
-  <section>
-    <img class="speaker picture" src="" alt="" />
-    <h3 class="name"></h3>
-    <h5 class="company"></h5>
-  </section>
-</div>
-
-<footer class="footer">
-  <div class="inner">
-    <ul class="icons">
-      <li><a href="https://twitter.com/AssethFR" class="icon first"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="mailto:contact@asseth.fr" class="icon"><i class="fas fa-envelope"></i></a></li>
-    </ul>
-    <p>&copy; EthCC. Website: <a href="https://www.linkedin.com/in/nicolas-descreux-39416a115/">Nicolas Descreux</a> & <a href="https://www.augustincousin.com">Augustin Cousin</a>
-  </div>
-</footer>
-
+      initScrollBar()
+    </script>
 <script src="speakers-json.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/countDown.js"></script>
