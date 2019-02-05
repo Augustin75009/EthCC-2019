@@ -26,14 +26,13 @@
       <div class="navbar">
         <a href="index.html">
           <h2 id="logo">EthCC</h2>
+          <div id="border-logo"></div>
         </a>
 
         <!-- displayed on laptops -->
         <div class="navbar-actions d-none d-sm-flex">
-          <a href="agenda.html" class="navbar-link">Agenda</a>
-          <div class="badge-container">
-            <a href="speakers.html" class="navbar-link">Speakers <span class="badge-container"></a>
-          </div>
+          <a href="agenda.html" class="navbar-link" id="btn-agenda">Agenda</a>
+          <a href="speakers.html" class="navbar-link">Speakers</a>
         </div>
       </div>
     </div>
@@ -96,10 +95,10 @@
             const blueScroll = document.querySelector(".blue-scroll")
             const greyScroll = document.querySelector(".grey-scroll")
             const y = window.pageYOffset;
-            const h = (y/(sh-ih))*100 + 120/w*100;
-            const hs = Math.ceil(h).toString() + '%';
+            const h = (y/(sh-ih))*(100-120/w*100) + 120/w*100;
+            const hs = h.toString() + '%';
             const hg = 100 - h;
-            const hgs = Math.ceil(hg).toString() + '%';
+            const hgs = hg.toString() + '%';
             blueScroll.style.width = hs;
             greyScroll.style.width = hgs;
           });

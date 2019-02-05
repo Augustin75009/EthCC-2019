@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 @import url(navbar.css);
 @import url(responsive.css);
+@import url(agenda.css);
 
 body {
   margin: 0;
@@ -41,20 +42,11 @@ h5 {
 
 a {
   text-decoration: none;
-color: #000000;
-}
-
-a:hover {
-  color: #47D3E5;
+  color: #101010;
 }
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.075);
-  margin: 1em 0;
-  padding: 0;
+  margin: 0;
 }
 
 .icons {
