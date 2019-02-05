@@ -94,12 +94,13 @@
             const ih = self.innerHeight
             const blueScroll = document.querySelector(".blue-scroll")
             const greyScroll = document.querySelector(".grey-scroll")
-            const y = window.pageYOffset
-            const h = (y/(sh-ih))*85 +15;
-            const hs = Math.ceil(h).toString() + '%'
+            const y = window.pageYOffset;
+            const h = (y/(sh-ih))*90 +10;
+            const hs = Math.ceil(h).toString() + '%';
+            console.log(hs);
             const hg = 100 - h;
-            const hgs = Math.ceil(hg).toString() + '%'
-            blueScroll.style.width = hs
+            const hgs = Math.ceil(hg).toString() + '%';
+            blueScroll.style.width = hs;
             greyScroll.style.width = hgs;
           });
         }
