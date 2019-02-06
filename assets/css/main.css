@@ -156,23 +156,8 @@ span.letters {
   overflow: hidden;
 }
 
-/*iframe {
-  -webkit-background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}*/
-
-.ytp-cued-thumbnail-overlay-image {
-
+.youtube {
+  height: 100% !important;
 }
 
 #aboutContent {
