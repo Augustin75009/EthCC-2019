@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   #banner {
     flex-direction: column-reverse !important;
     text-align: center
@@ -103,5 +103,9 @@
 
     footer>.inner {
     padding: 20px !important;
+  }
+
+  #countDown {
+    font-size: 40px !important;
   }
 }

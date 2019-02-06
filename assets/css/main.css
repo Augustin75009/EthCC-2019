@@ -99,14 +99,23 @@ span.letters {
   text-align: center;
 }
 
+@font-face{
+  font-family:'digital-7';
+  src: url('../font/digital-7.ttf');
+}
 
 #countDown {
-  /*position: absolute;*/
-/*  bottom: 10%;
-  right: 60%;*/
   color: black;
-  font-size: 50px;
+  font-family:'digital-7';
+  font-size: 60px;
   width: 100%
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+#countDown>span {
+  color: red;
+  font-size: 30px;
+
 }
 
 #sponsorSection {
