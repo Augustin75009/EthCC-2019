@@ -18,19 +18,104 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="navbar">
-		  <a href="index.html">
-		    <img src="/images/main/EthCC-2019.jpeg" class="brand">
-		  </a>
+		<div class="container-navbar">
+		     <div class="container-scroll">
+		       <div class="blue-scroll"></div>
+		       <div class="grey-scroll"></div>
+		     </div>
+		     <div class="navbar">
+		       <a href="index.html">
+		         <h2 id="logo">EthCC</h2>
+		         <div id="border-logo"></div>
+		       </a>
 
-		  <!-- displayed on laptops -->
-		  <div class="navbar-actions d-none d-sm-flex">
-		    <a href="agenda.html" class="navbar-link">Agenda</a>
-		    <div class="badge-container">
-		      <a href="speakers.html" class="navbar-link">Speakers <span class="badge-container"></a>
-		    </div>
-		  </div>
+		       <!-- displayed on laptops -->
+		       <div class="navbar-actions d-none d-sm-flex">
+		         <a href="agenda.html" class="navbar-link" id="btn-agenda">Agenda</a>
+		         <a href="speakers.html" class="navbar-link">Speakers</a>
+		       </div>
+		     </div>
+		   </div>
+
+		<div class="days">
+			<div class="day day5"><h2>5 Mars</h2></div>
+			<div class="day day6"><h2>6 Mars</h2></div>
+			<div class="day day7"><h2>7 Mars</h2></div>
 		</div>
+		<div class="speakers-container">
+			<form action="#">
+				<label for="speaker-input" id="label-speaker-input">Speakers :</label>
+				<input type="text" id="speaker-input">
+			</form>
 
-		<h1>Welcome in your agenda</h1>
+		</div>
+		<hr>
+		<div class="themes">
+			<div class="theme" style="background: rgb(188, 41, 30);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(6, 83, 163);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(16, 31, 38);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(85, 57, 134);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(27, 205, 133);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(251, 221, 0);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(200, 157, 102);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(219, 178, 182);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(63, 64, 66);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(241, 122, 32);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(0, 155, 72);"><h4>gros thèmes</h4></div>
+			<div class="theme"  style="background: rgb(86, 141, 208);"><h4>gros thèmes</h4></div>
+		</div>
+		<hr>
+		<div class="agenda-container">
+			<div id="timebar">
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+				<div class="hour">11h30</div>
+			</div>
+			<div class="room-container">
+				<div class="room"></div>
+				<div class="room"></div>
+				<div class="room"></div>
+				<div class="room"></div>
+				<div class="room"></div>
+				<div class="room"></div>
+			</div>
+		</div>
+		<script>
+		  const initScrollBar = () => {
+		    
+		    document.addEventListener('scroll', (event) => {
+		        const sh = document.body.scrollHeight;
+		        const ih = self.innerHeight
+		        const w = window.innerWidth
+		        const blueScroll = document.querySelector(".blue-scroll")
+		        const greyScroll = document.querySelector(".grey-scroll")
+		        const y = window.pageYOffset;
+		        const h = (y/(sh-ih))*(100-120/w*100) + 120/w*100;
+		        const hs = h.toString() + '%';
+		        const hg = 100 - h;
+		        const hgs = hg.toString() + '%';
+		        blueScroll.style.width = hs;
+		        greyScroll.style.width = hgs;
+		      });
+		    }
+
+		  initScrollBar()
+		</script>
 	</body>

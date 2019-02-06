@@ -1,0 +1,84 @@
+.days {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+	background: #47D3E5;
+	
+}
+
+.day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.3%;
+	background: rgb(50,50,50);
+	color:white;
+	height: 80px;
+
+}
+.day h2 {
+	letter-spacing: 0.05em;
+}
+
+#label-speaker-input {
+	font-size: 1.25em;
+}
+
+.speakers-container {
+	padding: 16px 24px;
+	background: rgba(0,0,0,0.04)
+}
+
+#speaker-input {
+
+}
+
+#speaker-input:focus {
+	outline: none;
+}
+
+.themes {
+	display: flex;
+	margin: 16px 0 16px 9px;
+}
+
+.theme {
+	margin-right: 8px;
+	width: 8%;
+	height: 50px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.agenda-container {
+	display: flex;
+}
+#timebar {
+	width:10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid grey;
+}
+
+.hour {
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+	width: 100%;
+}
+
+.room-container {
+	display: flex;
+	width: 90%;
+	background: rgb(50,50,50)
+}
+
+.room {
+	height: 100%;
+	width: calc(100%/6);
+	border-right: 1px solid white;
+}
