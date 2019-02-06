@@ -105,17 +105,18 @@ span.letters {
 }
 
 #countDown {
-  color: black;
+  color: white;
   font-family:'digital-7';
   font-size: 60px;
   width: 100%
   background-color: rgba(0, 0, 0, 0.075);
+  margin-top: 10%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #countDown>span {
   color: red;
   font-size: 30px;
-
 }
 
 #sponsorSection {
