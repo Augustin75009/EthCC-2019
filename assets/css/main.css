@@ -204,6 +204,10 @@ ul.alt>li {
   width: 100%;
 }
 
+.last-li {
+  border-bottom: solid 0px !important;
+}
+
 #speakersSection {
   padding-top: 24œpx;
   text-align: center;
