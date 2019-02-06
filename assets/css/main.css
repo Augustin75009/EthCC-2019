@@ -72,13 +72,12 @@ li{
   min-height: 95vh;
 }
 
-.content {
+#content {
   flex: 1 !important;
-  width: 50%;
-  padding: 3.75rem 3rem 1.75rem 3rem;
+  padding: 5rem 5rem 3rem 5rem;
 }
 
-.content>h1 {
+#content>h1 {
   font-size: 3.5rem;
   line-height: 1.2;
 }
@@ -88,9 +87,8 @@ span.letters {
   border-top: solid 3px #47D3E5;
 }
 
-.image {
+#image {
   flex: 1 !important;
-  width: 50%;
   background-image: url('../../images/main/EthCC-2019.jpeg');
   background-position: center;
   background-size: cover;
@@ -179,7 +177,7 @@ ul.alt>li {
 
 #speakersSection>h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 #speakersSection>button {
@@ -211,6 +209,11 @@ ul.alt>li {
 .inner {
   padding: 60px;
   text-align: center;
+}
+
+
+.inner>h2 {
+  margin: 24px 0px;
 }
 
 .icon {

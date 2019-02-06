@@ -1,3 +1,19 @@
+@media screen and (max-width: 1000px) {
+  #banner {
+    flex-direction: column-reverse !important;
+    text-align: center
+  }
+
+    #content {
+    min-height: 50vh;
+  }
+
+    #image {
+    min-height: 50vh;
+  }
+}
+
+
 @media screen and (max-width: 980px) {
   #aboutContent {
     flex: 3;
@@ -24,6 +40,13 @@
     padding: 24px 0px 0px 0px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  #content {
+    padding: 2rem 2rem 1.5rem 2rem !important;
+  }
+}
+
 
 @media screen and (max-width: 550px) {
   #aboutSection {
@@ -52,5 +75,13 @@
     width: 100% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
+  }
+
+    .inner {
+    padding: 10px !important;
+  }
+
+    footer>.inner {
+    padding: 20px !important;
   }
 }
