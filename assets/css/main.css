@@ -23,7 +23,7 @@ footer {
 
 h2, h3, h4, h5 {
   font-weight: 300;
-  line-height: 1.375;
+  line-height: 1.5;
   letter-spacing: -0.05em;
   font-size: 2.25rem;
   margin: 0;
@@ -76,19 +76,29 @@ li{
   min-height: 95vh;
 }
 
-#content {
+#banner-content {
   flex: 1 !important;
   padding: 5rem 5rem 3rem 5rem;
 }
 
-#content>h1 {
+#banner-content>h1 {
   font-size: 3.5rem;
   line-height: 1.2;
 }
 
-span.letters {
+#logo-countdown-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   border-bottom: solid 3px #47D3E5;
   border-top: solid 3px #47D3E5;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 24px;
+  width: 120px;
+  height: 55px;
 }
 
 #image {
