@@ -21,11 +21,10 @@ footer {
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
 }
 
-h2, h3, h5 {
+h2, h3, h4, h5 {
   font-weight: 300;
   line-height: 1.375;
   letter-spacing: -0.05em;
-  margin: 0 0 1rem 0;
   font-size: 2.25rem;
   margin: 0;
   padding: 0;
@@ -35,6 +34,11 @@ h2, h3, h5 {
 
 h3 {
   font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
+h4 {
+  margin: 0 0 1rem 0;
 }
 
 h5 {
@@ -72,13 +76,12 @@ li{
   min-height: 95vh;
 }
 
-.content {
+#content {
   flex: 1 !important;
-  width: 50%;
-  padding: 3.75rem 3rem 1.75rem 3rem;
+  padding: 5rem 5rem 3rem 5rem;
 }
 
-.content>h1 {
+#content>h1 {
   font-size: 3.5rem;
   line-height: 1.2;
 }
@@ -88,23 +91,32 @@ span.letters {
   border-top: solid 3px #47D3E5;
 }
 
-.image {
+#image {
   flex: 1 !important;
-  width: 50%;
   background-image: url('../../images/main/EthCC-2019.jpeg');
   background-position: center;
   background-size: cover;
   text-align: center;
 }
 
+@font-face{
+  font-family:'digital-7';
+  src: url('../font/digital-7.ttf');
+}
 
 #countDown {
-  /*position: absolute;*/
-/*  bottom: 10%;
-  right: 60%;*/
-  color: black;
-  font-size: 50px;
+  color: white;
+  font-family:'digital-7';
+  font-size: 60px;
   width: 100%
+  background-color: rgba(0, 0, 0, 0.075);
+  margin-top: 10%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#countDown>span {
+  color: red;
+  font-size: 30px;
 }
 
 #sponsorSection {
@@ -153,22 +165,47 @@ span.letters {
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
 }
 
-ul.alt>li {
-  padding: 0.5rem;
-  border-top: solid 1px;
-  border-top-color: rgba(0, 0, 0, 0.2);
+#player {
+  flex: 1;
+  overflow: hidden;
 }
 
-#aboutImage {
-  flex: 3;
+.youtube {
+  height: 100% !important;
+}
+
+#aboutContent {
+  flex: 1;
+  padding: 100px;
+}
+
+#aboutSectionBis {
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+}
+
+#aboutImageBis {
+  flex: 1;
   background-image: url("../../images/main/image-party.jpg");
   background-position: center;
   background-size: cover;
 }
 
-#aboutContent {
-  flex: 3;
+#aboutContentBis {
+  flex: 1;
   padding: 100px;
+}
+
+ul.alt>li {
+  padding: 0.5rem;
+  border-bottom: solid 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.last-li {
+  border-bottom: solid 0px !important;
 }
 
 #speakersSection {
@@ -179,7 +216,7 @@ ul.alt>li {
 
 #speakersSection>h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 #speakersSection>button {
@@ -188,6 +225,7 @@ ul.alt>li {
 
 .speaker.picture {
   width: 120px;
+  height: 120px;
   border-radius: 50%
 }
 
@@ -211,6 +249,11 @@ ul.alt>li {
 .inner {
   padding: 60px;
   text-align: center;
+}
+
+
+.inner>h2 {
+  margin: 24px 0px;
 }
 
 .icon {

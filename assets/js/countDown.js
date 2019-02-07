@@ -16,12 +16,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countDown").innerHTML = days + " <span>D</span> " + hours + " <span>H</span> "
+  + minutes + " <span>M</span> " + seconds + " <span>S</span>";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countDown").innerHTML = "EXPIRED";
+    document.getElementById("countDown").innerHTML = "";
   }
 }, 1000);
