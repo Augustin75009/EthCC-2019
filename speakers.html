@@ -38,9 +38,35 @@
 		   </div>
 
 		<h1>Welcome in speakers' pages</h1>
+
+     <section id="speakersSectionAll">
+      <h2>Speakers</h2>
+      <div id="speakersRowAll"></div>
+    </section>
+
+    <div id="speakerTemplateAll" style="display: none;">
+      <section>
+        <img class="speaker picture" src="" alt="" />
+        <h3 class="name"></h3>
+        <h5 class="company"></h5>
+      </section>
+    </div>
+
+    <script src="speakers-json.js"></script>
+    <script>
+      const speakersTemplateAll = document.getElementById("speakerTemplateAll")
+      const speakersRowAll = document.getElementById("speakersRowAll")
+
+      for (i = 0; i < speakers.length; i++) {
+        document.querySelector('#speakerTemplateAll .name').innerHTML = speakers[i].name;
+        document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
+        document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
+        speakersRowAll.appendChild(speakersTemplateAll.childNodes[1].cloneNode(true));
+      }
+    </script>
 		<script>
 		  const initScrollBar = () => {
-		    
+
 		    document.addEventListener('scroll', (event) => {
 		        const sh = document.body.scrollHeight;
 		        const ih = self.innerHeight
