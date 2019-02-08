@@ -12,8 +12,10 @@
 		<title>EthCC</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/components.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/autocomplete.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
 		<link rel="icon" type="image/png" href="favicon.ico" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
@@ -36,14 +38,14 @@
 		       </div>
 		     </div>
 		   </div>
-
-		<h1>Welcome in speakers' pages</h1>
-
     <div id="speakerSeaker">
-      <form action="">
-        <input type="text">
-        <input type="submit">
+      <form autocomplete="off" id="form">
+        <div class="autocomplete">
+          <input type="text" id="myInput">
+        </div>
+        <input type="submit" id="submit">
       </form>
+      <button id="reset">reset</button>
     </div>
 
      <section id="speakersSectionAll">
@@ -61,6 +63,7 @@
     </div>
 
     <script src="speakers-json.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
     <script>
       const speakersTemplateAll = document.getElementById("speakerTemplateAll")
       const speakersRowAll = document.getElementById("speakersRowAll")
@@ -93,5 +96,6 @@
 
 		  initScrollBar()
 		</script>
+    <script src="assets/js/filter.js"></script>
 	</body>
 

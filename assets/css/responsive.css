@@ -107,6 +107,29 @@
     font-size: 2rem !important;
     text-align: center;
   }
+
+  #speakerSeaker {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  #form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /*margin-top: 20px;*/
+  }
+
+  #myInput {
+    margin: 20px 0;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    color: #000000 !important;
+  }
+
+  #reset {
+    max-width: 100% !important;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
