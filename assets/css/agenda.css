@@ -62,13 +62,15 @@
 #timebar {
 	grid-column: 1;
 	grid-row: 1;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 56px repeat(138, 20px;);
 	flex-direction: column;
 	align-items: center;
 	border-right: 1px solid grey;
 }
 .timebar-title {
-	height: 56px;
+	grid-row: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -82,10 +84,10 @@
 	width: 100%;
 }
 
-.painleve-room {
+.room {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 56px repeat(11, 1fr);
+	grid-template-rows: 56px repeat(69, 30px);
 }
 
 .room-title {
