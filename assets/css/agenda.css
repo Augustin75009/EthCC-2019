@@ -54,31 +54,49 @@
 }
 
 .agenda-container {
-	display: flex;
+	display: grid;
+	width: 100%;
+	grid-template-rows: 1fr;
+  	grid-template-columns: 100px repeat(6, 1fr);
 }
 #timebar {
-	width:10%;
+	grid-column: 1;
+	grid-row: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border-right: 1px solid grey;
 }
-
-.hour {
-	height: 50px;
+.timebar-title {
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+.quarter {
+	height: 28px;
 	text-align: center;
 	border-bottom: 1px solid grey;
 	width: 100%;
 }
 
-.room-container {
-	display: flex;
-	width: 90%;
-	background: rgb(50,50,50)
+.painleve-room {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 56px repeat(11, 1fr);
 }
 
-.room {
-	height: 100%;
-	width: calc(100%/6);
-	border-right: 1px solid white;
+.room-title {
+	grid-row: 1
+}
+
+.conference {
+	background: rgb(30, 84, 158);
+	
+}
+#conference1 {
+	grid-row: 2;
+
 }
