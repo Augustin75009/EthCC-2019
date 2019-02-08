@@ -115,17 +115,13 @@ li{
 }
 
 #countDown {
-  color: white;
-  font-family:'digital-7';
-  font-size: 60px;
-  width: 100%
-  background-color: rgba(0, 0, 0, 0.075);
-  margin-top: 10%;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:  #47D3E5;
+  font-size: 48px;
+  margin: 0;
 }
 
 #countDown>span {
-  color: red;
+  color: black;
   font-size: 30px;
 }
 
