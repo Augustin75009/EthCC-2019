@@ -30,6 +30,12 @@
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
+
+    #speakersRowAll > * {
+    width: 25% !important;
+    text-align: center;
+    padding: 24px 0px 0px 0px;
+  }
 }
 
 
@@ -45,6 +51,12 @@
   }
 
   #speakersRow > * {
+    width: 33.3333333% !important;
+    text-align: center;
+    padding: 24px 0px 0px 0px;
+  }
+
+    #speakersRowAll > * {
     width: 33.3333333% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
@@ -81,6 +93,12 @@
     padding: 24px 0px 0px 0px;
   }
 
+    #speakersRowAll > * {
+    width: 50% !important;
+    text-align: center;
+    padding: 24px 0px 0px 0px;
+  }
+
   ul.alt>li {
     width: 96% !important;
   }
@@ -89,6 +107,29 @@
     font-size: 2rem !important;
     text-align: center;
   }
+
+  #speakerSeaker {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  #form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /*margin-top: 20px;*/
+  }
+
+  #myInput {
+    margin: 20px 0;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    color: #000000 !important;
+  }
+
+  #reset {
+    max-width: 100% !important;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -101,6 +142,12 @@
   }
 
   #speakersRow > * {
+    width: 100% !important;
+    text-align: center;
+    padding: 24px 0px 0px 0px;
+  }
+
+    #speakersRowAll > * {
     width: 100% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
