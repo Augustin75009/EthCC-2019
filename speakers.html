@@ -47,7 +47,6 @@
       </form>
       <button id="reset">reset</button>
     </div>
-
      <section id="speakersSectionAll">
       <h2>Speakers</h2>
       <div id="speakersRowAll" class="tooltip" ></div>
@@ -75,27 +74,7 @@
         speakersRowAll.appendChild(speakersTemplateAll.childNodes[1].cloneNode(true));
       }
     </script>
-		<script>
-		  const initScrollBar = () => {
-
-		    document.addEventListener('scroll', (event) => {
-		        const sh = document.body.scrollHeight;
-		        const ih = self.innerHeight
-		        const w = window.innerWidth
-		        const blueScroll = document.querySelector(".blue-scroll")
-		        const greyScroll = document.querySelector(".grey-scroll")
-		        const y = window.pageYOffset;
-		        const h = (y/(sh-ih))*(100-120/w*100) + 120/w*100;
-		        const hs = h.toString() + '%';
-		        const hg = 100 - h;
-		        const hgs = hg.toString() + '%';
-		        blueScroll.style.width = hs;
-		        greyScroll.style.width = hgs;
-		      });
-		    }
-
-		  initScrollBar()
-		</script>
+	<script src="assets/js/scrollDownBar.js"></script>
     <script src="assets/js/filter.js"></script>
 	</body>
 

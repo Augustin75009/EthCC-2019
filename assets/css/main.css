@@ -22,27 +22,10 @@ footer {
 }
 
 h2, h3, h4, h5 {
-  font-weight: 300;
-  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: -0.05em;
-  font-size: 2.25rem;
   margin: 0;
-  padding: 0;
-  border: 0;
   vertical-align: baseline
-}
-
-h3 {
-  font-size: 1.25rem;
-  margin: 0 0 1rem 0;
-}
-
-h4 {
-  margin: 0 0 1rem 0;
-}
-
-h5 {
-  font-size: 1.05rem;
 }
 
 a {
@@ -98,7 +81,7 @@ li{
   text-align: center;
   margin: 0 24px;
   width: 120px;
-  height: 55px;
+  height: 39px;
 }
 
 #image {
