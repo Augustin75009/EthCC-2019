@@ -5,16 +5,32 @@
 }
 
 #myInput {
+  padding-left: 4px;
+  border-radius: 4px;
   margin: 0 20px;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
   color: #000000 !important;
 }
 
 #myInputautocomplete-list {
+  font-size: 18px;
+  width: 30%;
   position: absolute;
   background-color: white;
-  padding-left: 20px;
+  padding-left: 24px;
+  z-index: 2;
+  opacity: 0.9;
 }
+
+#myInputautocomplete-list:hover {
+  cursor: pointer;
+}
+
+#myInputautocomplete-list>div:hover {
+  background-color: #47D3E5;
+  /*color: white;*/
+}
+
 
 #form {
   width: 60%;
