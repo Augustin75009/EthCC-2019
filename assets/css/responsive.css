@@ -11,6 +11,18 @@
     #image {
     min-height: 50vh;
   }
+
+  #banner-content {
+    padding: 2rem 5rem 3rem 5rem !important;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  #speakersRow>section {
+    margin: auto;
+  }
 }
 
 
@@ -36,16 +48,20 @@
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
+
+  #form {
+  width: 80%;
+  }
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   #aboutContent {
     flex: 3;
-    padding: 30px !important;
+    padding: 40px !important;
   }
 
-    #aboutContentBis {
+  #aboutContentBis {
     flex: 3;
     padding: 30px !important;
   }
@@ -56,10 +72,18 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 33.3333333% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  ul.alt>li {
+    width: 95% !important;
   }
 }
 
@@ -93,14 +117,14 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 50% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
 
   ul.alt>li {
-    width: 96% !important;
+    width: 80% !important;
   }
 
   h4 {
@@ -132,9 +156,14 @@
 
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
+
+  body {
+    text-align: center;
+  }
+
   #aboutContent {
-    padding: 10px !important;
+    padding: 30px !important;
   }
 
     #aboutContentBis {
@@ -153,15 +182,54 @@
     padding: 24px 0px 0px 0px;
   }
 
-    .inner {
+  .inner {
     padding: 10px !important;
   }
 
-    footer>.inner {
+  footer>.inner {
     padding: 20px !important;
   }
 
   #countDown {
     font-size: 40px !important;
   }
+
+  #form {
+    width: 100%;
+    text-align: center;
+  }
+
+  input#myInput {
+    width: 95%;
+  }
+
+  #submit {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  .autocomplete {
+    width: 95%;
+  }
+
+  #reset {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  #speakerSeaker {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  #speakersSectionAll {
+    padding-top: 0px;
+  }
+
 }
