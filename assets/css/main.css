@@ -126,7 +126,7 @@ li{
 }
 
 .sponsorbronze {
-  width: 190px;
+  width: 160px;
   max-height: 120px;
 }
 
@@ -140,7 +140,8 @@ li{
 }
 
 .partner {
-  width: 140px;
+  height: 80px;
+  /*width: 140px;*/
 }
 
 .icons.sponsors.media {
