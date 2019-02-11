@@ -14,7 +14,7 @@
 
 #myInputautocomplete-list {
   font-size: 18px;
-  width: 30%;
+  width: 300px;
   position: absolute;
   background-color: white;
   padding-left: 24px;
@@ -33,7 +33,7 @@
 
 
 #form {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
