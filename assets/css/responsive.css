@@ -190,6 +190,11 @@
     text-align: center;
   }
 
+  #banner-content {
+    font-size: 1rem !important;
+    padding: 1rem 2rem 2rem 2rem !important;
+  }
+
   #aboutContent {
     padding: 30px !important;
   }
@@ -204,7 +209,7 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 100% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
@@ -220,7 +225,7 @@
   }
 
   #countDown {
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
 
   #form {
