@@ -1239,7 +1239,7 @@ var speakers = [
     "name": "Ashleigh Schap",
     "link": "https://twitter.com/ashleighschap",
     "picture": "images/speakers/209.png",
-    "company": "MakerDao"
+    "company": "MakerDAO"
   },
   {
     "name": "Remco Bloemen",

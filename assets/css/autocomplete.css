@@ -50,3 +50,9 @@ input#myInput {
 .autocomplete {
   width: 80%;
 }
+
+.oversize {
+  justify-content: center;
+  transform: scale(1.8);
+  margin-bottom: 110px;
+}
