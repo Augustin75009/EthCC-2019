@@ -20,6 +20,7 @@
   padding-left: 24px;
   z-index: 2;
   opacity: 0.9;
+  text-align: initial;
 }
 
 #myInputautocomplete-list:hover {
