@@ -15,12 +15,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/autocomplete.css" />
-		<link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+		<link rel="stylesheet" href="assets/css/speakers.css" />
 		<link rel="icon" type="image/png" href="favicon.ico" />
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="container-navbar">
+		<div class="container-navbar" style="z-index: 1;">
 		     <div class="container-scroll">
 		       <div class="blue-scroll"></div>
 		       <div class="grey-scroll"></div>
@@ -49,32 +50,33 @@
     </div>
      <section id="speakersSectionAll">
       <h2>Speakers</h2>
-      <div id="speakersRowAll" class="tooltip" ></div>
+      <div id="speakersRowAll"></div>
     </section>
 
     <div id="speakerTemplateAll" style="display: none;">
-      <section>
+      <section class="tooltip" >
         <img class="speaker picture" src="" alt="" />
         <h3 class="name"></h3>
         <h5 class="company"></h5>
-        <span class="tooltiptext">Tooltip text</span>
+        <span class="tooltiptext"></span>
       </section>
     </div>
 
-    <script src="speakers-json.js"></script>
-    <script src="assets/js/autocomplete.js"></script>
-    <script>
-      const speakersTemplateAll = document.getElementById("speakerTemplateAll")
-      const speakersRowAll = document.getElementById("speakersRowAll")
 
-      for (i = 0; i < speakers.length; i++) {
-        document.querySelector('#speakerTemplateAll .name').innerHTML = speakers[i].name;
-        document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
-        document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
-        speakersRowAll.appendChild(speakersTemplateAll.childNodes[1].cloneNode(true));
-      }
-    </script>
-	<script src="assets/js/scrollDownBar.js"></script>
-    <script src="assets/js/filter.js"></script>
-	</body>
+    <footer class="footer">
+      <div class="inner">
+        <ul class="icons">
+          <li><a href="https://twitter.com/AssethFR" class="icon first"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:contact@asseth.fr" class="icon"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p>&copy; EthCC. Website: <a href="https://www.linkedin.com/in/nicolas-descreux-39416a115/">Nicolas Descreux</a> & <a href="https://www.augustincousin.com">Augustin Cousin</a>
+      </div>
+    </footer>
+
+  <script src="speakers-json.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/autocomplete.js"></script>
+  <script src="assets/js/scrollDownBar.js"></script>
+  <script src="assets/js/tooltip.js"></script>
+</body>
 

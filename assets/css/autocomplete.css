@@ -17,6 +17,7 @@
 }
 
 #form {
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -24,4 +25,12 @@
 
 #reset {
   margin: 20px;
+}
+
+input#myInput {
+  width: 80%;
+}
+
+.autocomplete {
+  width: 80%;
 }
