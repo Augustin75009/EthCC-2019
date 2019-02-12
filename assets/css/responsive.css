@@ -4,11 +4,11 @@
     text-align: center
   }
 
-    #content {
+  #content {
     min-height: 50vh;
   }
 
-    #image {
+  #image {
     min-height: 50vh;
   }
 
@@ -24,7 +24,7 @@
     margin: auto;
   }
 
-  #form {
+  .form {
     width: 60%;
   }
 }
@@ -53,7 +53,7 @@
     padding: 24px 0px 0px 0px;
   }
 
-  #form {
+  .form {
   width: 75%;
   }
 }
@@ -141,20 +141,20 @@
   }
 
 
-  #form {
+  .form {
     display: flex;
     flex-flow: column;
     align-items: center;
     /*margin-top: 20px;*/
   }
 
-  #myInput {
+  .myInput {
     margin: 20px 0;
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
     color: #000000 !important;
   }
 
-  #form {
+  .form {
     width: 100%;
     text-align: center;
   }
@@ -170,17 +170,24 @@
   }
 
   #speakerSeaker {
-    width: 95%;
+    width: 90%;
     text-align: center;
     margin: auto;
     display: inline-flex;
     flex-direction: column;
   }
 
-    #submit {
+  .submit {
     width: 100%;
     margin-bottom: 20px
   }
+
+  .switch {
+  position: absolute !important;
+  top: 68px !important;
+  left: 87% !important;
+  }
+
 
 }
 
@@ -228,16 +235,16 @@
     font-size: 32px !important;
   }
 
-  #form {
+  .form {
     width: 100%;
     text-align: center;
   }
 
-  input#myInput {
+  input.myInput {
     width: 95%;
   }
 
-  #submit {
+  .submit {
     width: 100%;
     margin-bottom: 20px
   }
@@ -270,6 +277,11 @@
 
   .logo {
     height: 38px !important;
+  }
+
+  .switch {
+  top: 68px !important;
+  left: 93% !important;
   }
 
 }
