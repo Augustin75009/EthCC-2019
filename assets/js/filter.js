@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
 formBis.addEventListener('submit', (event) => {
   event.preventDefault();
   console.log(formElementBis.value)
-  speakerByTheme(formElementBis.value);
+  speakerByTopic(formElementBis.value);
   });
 
 reset.addEventListener('click', (event) => {
@@ -66,13 +66,13 @@ function speakerByName(element) {
   }
 }
 
-function speakerByTheme(element) {
+function speakerByTopic(element) {
 
   speakersRowFilter.innerHTML = ""
   counterOverSize = 0;
   for (i = 0; i < 7; i++) { //replace by speakers.length in production
-    console.log(speakers[i].theme.includes(element))
-    if (speakers[i].theme.includes(element)) {
+    console.log(speakers[i].topic.includes(element))
+    if (speakers[i].topic.includes(element)) {
       if(speakers[i].link != undefined && speakers[i].link != '') {
         document.querySelector('#speakerTemplateAll .name').innerHTML =
         (`<a href="`+speakers[i].link+`">`+speakers[i].name+`  <i class="fab fa-twitter-square"></i></a>`);
