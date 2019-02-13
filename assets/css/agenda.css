@@ -2,9 +2,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	
+
 	background: #47D3E5;
-	
+
 }
 
 .day {
@@ -100,13 +100,13 @@
 	opacity: 0.2;
 }
 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
 .agenda-container {
 	display: grid;
 	width: 100%;
@@ -158,7 +158,7 @@
 }
 
 .conference {
-	grid-column: 1;	
+	grid-column: 1;
 	color: white;
 	font-style: italic;
 	display: flex;
@@ -176,7 +176,7 @@
 	align-items: center;
 	justify-content: center;
 	box-shadow: 1px 3px 3px lightgrey;
-	
+
 }
 #conference1 {
 	grid-row: 2 / span 6;

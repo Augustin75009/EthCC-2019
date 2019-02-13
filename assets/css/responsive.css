@@ -25,7 +25,11 @@
   }
 
   .form {
-    width: 60%;
+    width: 100%;
+  }
+
+  .myInput {
+    width: 83%;
   }
 }
 
@@ -54,7 +58,7 @@
   }
 
   .form {
-  width: 75%;
+  width: 100%;
   }
 }
 
@@ -188,6 +192,10 @@
   left: 87% !important;
   }
 
+  .foundElement {
+    width: 100%;
+  }
+
 
 }
 
@@ -241,7 +249,7 @@
   }
 
   input.myInput {
-    width: 95%;
+    width: 85%;
   }
 
   .submit {
@@ -281,7 +289,7 @@
 
   .switch {
   top: 68px !important;
-  left: 93% !important;
+  left: 87% !important;
   }
 
 }

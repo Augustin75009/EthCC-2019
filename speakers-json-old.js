@@ -1,8 +1,5 @@
 var speakers = [
   {
-    "themes": ["Scalability", "dApps", "Crypto Economics", "Web 3.0", "Zero to Hero", "DAO/Governance", "UX/UI", "Ecosysteme", "Core Etherium", "Decentralized Finance", "Security", "Dev Tools", "gaming", "Privacy", "Browser & Files"]
-  },
-  {
     "name": "Christoph Jentzsch",
     "picture": "images/speakers/1.png",
     "company": "Slock.it",
