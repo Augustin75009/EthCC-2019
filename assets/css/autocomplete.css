@@ -1,7 +1,7 @@
 #speakerSeaker {
   display: inline-flex;
   width: 100%;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .myInput {
@@ -10,7 +10,7 @@
   margin: 0 20px;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
   color: #000000 !important;
-  width: 80%
+  width: 87%
 }
 
 .autocomplete-items {
@@ -35,10 +35,11 @@
 
 
 .form {
-  width: 55%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 #reset {
@@ -50,7 +51,7 @@ input.myInput, {
 }
 
 .autocomplete {
-  width: 80%;
+  width: 50%;
 }
 
 .oversize {
@@ -70,4 +71,10 @@ input.myInput, {
 
 .oversize>section>h5 {
   font-size: 1.2rem
+}
+
+.foundElement {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
 }
