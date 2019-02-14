@@ -27,7 +27,7 @@
       </div>
       <div class="navbar">
         <a href="index.html">
-          <h2 id="logo">EthCC</h2>
+          <h2><span id="logo">EthCC</span></h2>
           <div id="border-logo"></div>
         </a>
 
@@ -42,24 +42,24 @@
     <div id="banner">
       <div id="banner-content">
         <h2>Ethereum Community Conference</h2>
-        <h2 class="logo">EthCC</h2>          
+        <h2 class="logo">EthCC</h2>
         <h2>2019 edition - 5th, 6th, 7th <br/>March 2019 in Paris</h2>
         <h1 id="countDown">In</h1>
         <ul class="actions vertical">
           <li>
-            <a href="https://www.weezevent.com/ethereum-community-conference-2019" class="button medium wide smooth-scroll-middle" target= "_blank">Book with credit card</a>
-            <a href="https://ethcc.io/crypto.html" class="button medium special wide smooth-scroll-middle" target= "_blank">Book with Crypto!</a>
+            <a href="https://www.weezevent.com/ethereum-community-conference-2019" class="booking" target= "_blank">Book with credit card</a>
+            <a href="https://ethcc.io/crypto.html" class="booking crypto" target= "_blank">Book with Crypto! (10% OFF)</a>
           </li>
         </ul>
-        Check out the <a class="smooth-scroll" href="#speakersSection">speakers!</a> 🚀
-        <br>To apply for a talk, click <a href="https://goo.gl/forms/vnR25OZgYRSIpQL02">here</a> 🚀
-        <br>The website of the 2018 edition <a href="ethcc-2018/index.html">EthCC 2018</a>
-        <br>Media Partner? <a href="mailto:contact@asseth.fr"> contact us</a>
+        Check out the <a class="internalLink" href="#speakersSection">speakers!</a> 🚀
+        <br>To apply for a talk, click <a class="internalLink" href="https://goo.gl/forms/vnR25OZgYRSIpQL02">here</a> 🚀
+        <br>The website of the 2018 edition <a class="internalLink" href="ethcc-2018/index.html">EthCC 2018</a>
+        <br>Media Partner? <a class="internalLink" href="mailto:contact@asseth.fr"> contact us</a>
       </div>
 
       <div id="image">
         <!-- <img src="images/main/EthCC-2019.jpeg" alt="" /> -->
-        
+
       </div>
     </div>
 
@@ -72,7 +72,7 @@
         </div>
         <div id="aboutContent">
          <h4>About</h4>
-            <p>EthCC 2019 (Ethereum Community Conference) is the second edition of a <b>series of conferences and workshops that bring together and strengthen the international Ethereum community.</b> EthCC will take place in Paris, on March 5th, 6th and 7th. EthCC makes a point of being inclusive. It is non-profit and the tickets are sold at cost price. Everybody is welcome, tech-savvy neophytes and experts, developers and non-techs, students and researchers, ....</p>
+            <p class="about">EthCC 2019 (Ethereum Community Conference) is the second edition of a <b>series of conferences and workshops that bring together and strengthen the international Ethereum community.</b> EthCC will take place in Paris, on March 5th, 6th and 7th. EthCC makes a point of being inclusive. It is non-profit and the tickets are sold at cost price. Everybody is welcome, tech-savvy neophytes and experts, developers and non-techs, students and researchers, ....</p>
         </div>
       </div>
     </section>
@@ -94,9 +94,9 @@
     </section>
 
     <section id="speakersSection">
-      <h2>Speakers</h2>
+      <h4>Speakers</h4>
       <div id="speakersRow"></div>
-    <button id="showMore">See All</button>
+    <a id="showMore" href="speakers.html">See All</a>
     </section>
 
     <div id="speakerTemplate" style="display: none;">
@@ -111,7 +111,7 @@
     <div id="sponsorSection">
       <section class="wrapper">
         <div class="inner">
-          <h2>Sponsors</h2>
+          <h2 style="text-decoration: underline;">Sponsors</h2>
           <!-- <h3>Gold</h3>
           <span class="image"><a href="https://consensys.net" target=_blank><img class="sponsorgold" src="images/sponsors/consensys.png" alt="Consensys"></a></span>
 
@@ -128,8 +128,10 @@
                 <li><span class="image"><a href="https://iex.ec/fr/" target=_blank><img class="sponsorbronze" src="images/sponsors-2019/iExec.png" alt=""></a></span></li>
                 <li><span class="image"><a href="https://liquidity.network/" target=_blank><img class="sponsorbronze" src="images/sponsors-2019/Liquidity.png" alt=""></a></span></li>
                 <li><span class="image"><a href="https://gnosis.pm/" target=_blank><img class="sponsorbronze" src="images/sponsors/gnosis.svg" alt=""></a></span></li>
-                <li><span class="image"><a href="https://daostack.io/" target=_blank><img class="sponsorbronze" src="images/sponsors-2019/daostack.png" alt=""></a></span></li>
                 <li><span class="image"><a href="http://www.brainbot.com/" target=_blank><img class="sponsorbronze brainbot" src="images/sponsors-2019/brainbot.png" alt=""></a></span></li>
+                <li><span class="image"><a href="https://daostack.io/" target=_blank><img class="sponsorbronze" src="images/sponsors-2019/daostack.png" alt=""></a></span></li>
+                <li><span class="image"><a href="https://www.opera.com/fr" target=_blank><img class="sponsorbronze"
+                  src="images/sponsors-2019/opera.png" alt=""></a></span></li>
               </ul>
 
             <!--   <h3>Iron</h3>
@@ -140,11 +142,12 @@
                 <li><span class="image"><a href="https://www.axionable.com/" target=_blank><img class="sponsoriron" src="images/sponsors/axionable.png" alt=""></a></span></li>
                 <li><span class="image"><a href="https://www.fabric.vc/" target=_blank><img class="sponsoriron" src="images/sponsors/fabricventures.png" alt=""></a></span></li>
               </ul> -->
-              <h2>Media and Institutional Supports</h2>
+              <h2 style="text-decoration: underline;">Media and Institutional Supports</h2>
               <ul class="icons sponsors media">
                 <li><span class="image"><a href="https://consensys.net/" target=_blank><img class="partner" src="images/media-2019/consensys.png" alt=""></a></span></li>
-                <li><span class="image"><a href="http://www.cnam.fr/" target=_blank><img class="partner" src="images/media-2019/cnam.png" alt=""></a></span></li>
-                <li><span class="image"><a href="https://bitcoinmagazine.nl/" target=_blank><img class="partner" src="images/media-2019/BMNL.jpeg" alt=""></a></span></li>
+                <li><span class="image"><a href="https://www.ethereum.org/foundation" target=_blank><img class="partner" src="images/media-2019/EF.png" alt=""></a></span></li>
+                <li><span class="image"><a href="http://www.cnam.fr/portail/conservatoire-national-des-arts-et-metiers-821166.kjsp" target=_blank><img class="partner" src="images/media-2019/cnam.png" alt=""></a></span></li>
+                <li><span class="image"><a href="https://journalducoin.com/altcoins/ethcc-2019-la-communaute-internationale-ethereum-se-rassemble-a-paris/" target=_blank><img class="partner" src="images/media-2019/JDC.jpg" alt=""></a></span></li>
               </ul>
 
         </div>

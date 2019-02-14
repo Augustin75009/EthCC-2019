@@ -1,27 +1,80 @@
 #speakerSeaker {
   display: inline-flex;
   width: 100%;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
-#myInput {
+.myInput {
+  padding-left: 4px;
+  border-radius: 4px;
   margin: 0 20px;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
   color: #000000 !important;
+  width: 87%
 }
 
-#myInputautocomplete-list {
+.autocomplete-items {
+  font-size: 18px;
+  width: 300px;
   position: absolute;
   background-color: white;
-  padding-left: 20px;
+  padding-left: 24px;
+  z-index: 2;
+  opacity: 0.9;
+  text-align: initial;
 }
 
-#form {
+.autocomplete-items:hover {
+  cursor: pointer;
+}
+
+.autocomplete-items>div:hover {
+  background-color: #47D3E5;
+  /*color: white;*/
+}
+
+
+.form {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 #reset {
   margin: 20px;
+}
+
+input.myInput, {
+  width: 80%;
+}
+
+.autocomplete {
+  width: 50%;
+}
+
+.oversize {
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.oversize>section>img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+
+.oversize>section>h3 {
+  font-size: 1.5rem
+}
+
+.oversize>section>h5 {
+  font-size: 1.2rem
+}
+
+.foundElement {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
 }

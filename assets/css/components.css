@@ -1,9 +1,14 @@
-button, .submit {
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button, .submit, .booking, #showMore {
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 0.125em;
   text-align: center;
   text-decoration: none;
@@ -22,12 +27,37 @@ button, .submit {
   color: #000000 !important;
 }
 
+.booking.crypto {
+  background-color: black;
+  color: white !important;
+}
+
 button:hover {
   box-shadow: inset 0 0 0 1px #47D3E5;
   color: #47D3E5 !important;
 }
 
-#submit:hover {
+.booking:hover {
   box-shadow: inset 0 0 0 1px #47D3E5;
   color: #47D3E5 !important;
+}
+
+.booking.crypto:hover {
+  background-color: #47D3E5;
+  color: black !important;
+}
+
+.submit:hover {
+  box-shadow: inset 0 0 0 1px #47D3E5;
+  color: #47D3E5 !important;
+}
+
+#showMore:hover {
+  box-shadow: inset 0 0 0 1px #47D3E5;
+  color: #47D3E5 !important;
+}
+
+.internalLink {
+  color: #47D3E5;
+  font-weight: 400;
 }

@@ -3,7 +3,8 @@
   top: 0;
   width: 100%;
   box-shadow: 1px 1px 1px lightgrey;
-  
+  z-index: 100;
+
 }
 
 .container-scroll {
@@ -26,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 0 24px 0 0;
+  padding: 0 0 0 0;
 }
 
 #logo {
@@ -40,26 +41,32 @@
   width: 25%;
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
+}
+
+.navbar-actions>a {
+
 }
 
 .navbar-link {
   font-size: 1.25em;
-
 }
 
-#btn-agenda {
+.navbar-link {
   text-align: center;
   width: 6em;
-  
-  background: #47D3E5;
-  color: white;
   font-weight: 400;
-  border: 2px solid white;
-  transition: 0.2s ease 
-}
-
-#btn-agenda:hover {
-  border: 2px solid #47D3E5;
+  border: 1px solid #47D3E5;
   background: white;
   color: #47D3E5;
+  border-radius: 4px;
+  padding: 0px 2px 0px 2px;
+  margin-right: 4px;
+  transition: 0.2s ease
+}
 
+.navbar-link:hover {
+  background: #47D3E5;
+  color: white;
+  border: 1px solid white;
+}

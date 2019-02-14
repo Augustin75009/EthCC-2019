@@ -1,10 +1,15 @@
+/*.fixedSection {
+  position: sticky;
+  z-index: 40;
+}*/
+
 .days {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	
+
 	background: #47D3E5;
-	
+
 }
 
 .day {
@@ -12,22 +17,26 @@
 	justify-content: center;
 	align-items: center;
 	width: 33.3%;
-	background: rgb(50,50,50);
+	background: rgba(0,0,0, 0.1);
 	color:white;
-	height: 80px;
+	height: 56px;
 
 }
 .day h2 {
 	letter-spacing: 0.05em;
 }
 
+.day.day6, .day.day7 {
+  background: rgba(0,0,0, 0.5);
+}
+
 #label-speaker-input {
 	font-size: 1.25em;
 }
-#speaker-agenda-inputautocomplete-list {
-	position: absolute;
-  	background-color: white;
-  	padding-left: 20px;
+
+.speakers-container {
+	padding: 16px 24px;
+	background: white;
 }
 
 .speaker-form {
@@ -44,18 +53,36 @@
 }
 
 .themes {
+  position: relative;
 	display: flex;
-	margin: 16px 0 16px 9px;
+	padding: 16px 0 16px 9px;
+  overflow-x: scroll;
+  cursor: grab;
+  background: white;
+  z-index: 40;
+}
+
+.themes.active {
+  cursor: grabbing;
 }
 
 .theme {
-	margin-right: 8px;
-	width: 8%;
-	height: 50px;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin-right: 8px;
+  min-width: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.theme>h3 {
+  font-size: 1.1rem
+}
+
+.theme:hover {
+  /*cursor: pointer;*/
 }
  .red {
  	background: rgb(188, 41, 30);
@@ -105,18 +132,15 @@
 	opacity: 0.2;
 }
 
- 
- 
- 
- 
- 
- 
- 
 .agenda-container {
 	display: grid;
 	width: 100%;
 	grid-template-rows: 1fr;
-  	grid-template-columns: 100px repeat(6, 1fr);
+  grid-template-columns: 100px repeat(6, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-top: solid 0.5px #ccc;
+  /*margin-top: 222px;*/
 }
 #timebar {
 	grid-column: 1;
@@ -124,13 +148,14 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 56px repeat(138, 20px);
-	border-right: 1px solid grey;
+	border-right: 1px solid #ccc;
 }
 .timebar-title {
 	grid-row: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .five-min {
 	grid-row: auto / span 1;
@@ -138,13 +163,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	border-top:  0.5px solid lightgrey;
+	border-top:  0.5px solid #ccc;
+  font-size: 0.8rem;
 }
 .room {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 56px repeat(138, 20px);
-	border-right: 1px solid grey;
+	border-right: 1px solid #ccc;
+  min-width: 100px;
+}
+
+.room>h2 {
+  font-size: 1rem;
+}
+
+.room>div>h3 {
+  font-size: 1rem;
+}
+
+.room>div {
+  border-radius: 4px;
+  margin: -0.1px;
 }
 
 .painleve {
@@ -159,11 +199,12 @@
 	align-items: center;
 	background: #47D3E5;
 	font-weight: bold;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #ccc;
+  margin-bottom: 1px;
 }
 
 .conference {
-	grid-column: 1;	
+	grid-column: 1;
 	color: white;
 	font-style: italic;
 	display: flex;
@@ -181,11 +222,42 @@
 	align-items: center;
 	justify-content: center;
 	box-shadow: 1px 3px 3px lightgrey;
-	
-}
-#conference1 {
-	grid-row: 2 / span 6;
 
+}
+
+#conference1, #conference2, #conference3, #conference4, #conference5, #conference6, #conference7, #conference8, #conference9 {
+  cursor: pointer;
+  z-index: 1;
+  position:relative;
+}
+
+#conference1-infos, #conference2-infos, #conference3-infos, #conference4-infos, #conference5-infos, #conference6-infos, #conference7-infos, #conference8-infos, #conference9-infos {
+  position: absolute;
+  background: #47D3E5;
+  z-index: 2;
+  border-radius: 12px;
+  padding: 0px 10px;
+  font-weight: 600;
+  width: 80%;
+  justify-content: center;
+  text-align: center
+}
+
+#conference1-infos>a, #conference2-infos>a, #conference3-infos>a, #conference4-infos>a, #conference5-infos>a, #conference6-infos>a, #conference7-infos>a, #conference8-infos>a, #conference9-infos>a {
+  color: black;
+  cursor: cell;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.lighter {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0);
+}
+
+
+#conference1 {
+  grid-row: 2 / span 6;
 }
 
 #conference2 {
@@ -227,3 +299,35 @@
 #conference9 {
 	grid-row:  88 / span 6;
 }
+
+.hr-separator {
+  color: #ccc;
+}
+
+.SlotHidden {
+  visibility: hidden;
+  position: absolute;
+  height: 100%:
+  width: 100%;
+}
+
+/*.scroll-start {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  border: solid 1px red;
+  height: 100% !important;
+  width: 30px !important;
+  border-radius: 0;
+}
+
+.scroll-end {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  border: solid 1px red;
+  height: 100% !important;
+  width: 30px !important;
+  border-radius: 0;
+}
+*/

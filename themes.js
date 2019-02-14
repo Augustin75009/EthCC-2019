@@ -1,0 +1,1 @@
+ var topics = ["Scalability", "dApps", "Crypto Economics", "Web 3.0", "Zero to Hero", "DAO/Governance", "UX/UI", "Ecosysteme", "Core Etherium", "Decentralized Finance", "Security", "Dev Tools", "Gaming", "Privacy", "Browser & Files"]

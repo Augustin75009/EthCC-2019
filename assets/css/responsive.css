@@ -1,16 +1,44 @@
 @media screen and (max-width: 1030px) {
+  .room>div>h3 {
+  font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 1030px) {
   #banner {
     flex-direction: column-reverse !important;
     text-align: center
   }
 
-    #content {
+  #content {
     min-height: 50vh;
   }
 
-    #image {
+  #image {
     min-height: 50vh;
   }
+
+  #banner-content {
+    padding: 2rem 5rem 3rem 5rem !important;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  #speakersRow>section {
+    margin: auto;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .myInput {
+    width: 83%;
+  }
+
+
 }
 
 
@@ -36,16 +64,25 @@
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
+
+  .form {
+  width: 100%;
+  }
 }
 
 
-@media screen and (max-width: 750px) {
-  #aboutContent {
-    flex: 3;
-    padding: 30px !important;
+@media screen and (max-width: 770px) {
+
+  .navbar-link {
+    font-size: 1em;
   }
 
-    #aboutContentBis {
+  #aboutContent {
+    flex: 3;
+    padding: 40px !important;
+  }
+
+  #aboutContentBis {
     flex: 3;
     padding: 30px !important;
   }
@@ -56,10 +93,26 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 33.3333333% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  ul.alt>li {
+    width: 95% !important;
+  }
+
+  .autocomplete {
+    width: 70%;
+  }
+
+  .room>div>h3 {
+  font-size: 0.8rem !important;
   }
 }
 
@@ -67,10 +120,17 @@
   #content {
     padding: 2rem 2rem 1.5rem 2rem !important;
   }
+  .room>div>h3 {
+  font-size: 0.7rem !important;
+  }
 }
 
 
 @media screen and (max-width: 550px) {
+  .navbar-actions {
+    width: 50%;
+  }
+
   #aboutSection {
     display: flex;
     flex-direction: column !important;
@@ -93,14 +153,14 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 50% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
 
   ul.alt>li {
-    width: 96% !important;
+    width: 80% !important;
   }
 
   h4 {
@@ -108,37 +168,82 @@
     text-align: center;
   }
 
-  #speakerSeaker {
-    display: inline-flex;
-    flex-direction: column;
-  }
 
-  #form {
+  .form {
     display: flex;
     flex-flow: column;
     align-items: center;
     /*margin-top: 20px;*/
   }
 
-  #myInput {
+  .myInput {
     margin: 20px 0;
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
     color: #000000 !important;
   }
 
-  #reset {
-    max-width: 100% !important;
+  .form {
+    width: 100%;
+    text-align: center;
   }
+
+  .autocomplete {
+    width: 95%;
+  }
+
+  #reset {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  #speakerSeaker {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .submit {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  .switch {
+    position: absolute !important;
+    top: 68px !important;
+    left: 87% !important;
+  }
+
+  .foundElement {
+    width: 100%;
+  }
+
+  #conference1-infos, #conference2-infos, #conference3-infos, #conference4-infos, #conference5-infos, #conference6-infos, #conference7-infos, #conference8-infos, #conference9-infos {
+    width: 60% !important;
+  }
+
 
 }
 
-@media screen and (max-width: 380px) {
-  #aboutContent {
-    padding: 10px !important;
+@media screen and (max-width: 420px) {
+
+  body {
+    text-align: center;
   }
 
-    #aboutContentBis {
-    padding: 10px !important;
+  #banner-content {
+    font-size: 1rem !important;
+    padding: 1rem 2rem 2rem 2rem !important;
+  }
+
+  #aboutContent {
+    padding: 30px !important;
+  }
+
+  #aboutContentBis {
+    padding: 30px 10px 10px 10px !important;
   }
 
   #speakersRow > * {
@@ -147,21 +252,72 @@
     padding: 24px 0px 0px 0px;
   }
 
-    #speakersRowAll > * {
+  #speakersRowAll > * {
     width: 100% !important;
     text-align: center;
     padding: 24px 0px 0px 0px;
   }
 
-    .inner {
+  .inner {
     padding: 10px !important;
   }
 
-    footer>.inner {
+
+  footer>.inner {
     padding: 20px !important;
   }
 
   #countDown {
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
+
+  .form {
+    width: 100%;
+    text-align: center;
+  }
+
+  input.myInput {
+    width: 85%;
+  }
+
+  .submit {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  .autocomplete {
+    width: 95%;
+  }
+
+  #reset {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  #speakerSeaker {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  #speakersSectionAll {
+    padding-top: 0px;
+  }
+
+  .logo {
+    height: 38px !important;
+  }
+
+  .switch {
+  top: 79px !important;
+  left: 87% !important;
+  }
+
 }
