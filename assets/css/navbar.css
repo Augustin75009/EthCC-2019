@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   box-shadow: 1px 1px 1px lightgrey;
-  
+
 }
 
 .container-scroll {
@@ -40,6 +40,7 @@
   width: 25%;
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .navbar-link {
@@ -50,12 +51,11 @@
 #btn-agenda {
   text-align: center;
   width: 6em;
-  
-  background: #47D3E5;
-  color: white;
+  /*background: #47D3E5;*/
+  /*color: white;*/
   font-weight: 400;
   border: 2px solid white;
-  transition: 0.2s ease 
+  transition: 0.2s ease
 }
 
 #btn-agenda:hover {
