@@ -24,14 +24,19 @@
 #label-speaker-input {
 	font-size: 1.25em;
 }
-
-.speakers-container {
-	padding: 16px 24px;
-	background: rgba(0,0,0,0.04)
+#speaker-agenda-inputautocomplete-list {
+	position: absolute;
+  	background-color: white;
+  	padding-left: 20px;
 }
 
-#speaker-input {
-
+.speaker-form {
+	height: 66px;
+	width: 24%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: row wrap;
 }
 
 #speaker-input:focus {

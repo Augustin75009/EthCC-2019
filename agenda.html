@@ -42,13 +42,14 @@
 			<div class="day day6"><h2>6 Mars</h2></div>
 			<div class="day day7"><h2>7 Mars</h2></div>
 		</div>
-		<div class="speakers-container">
-			<form action="#">
-				<label for="speaker-input" id="label-speaker-input">Speakers :</label>
-				<input type="text" id="speaker-input">
-			</form>
-
-		</div>
+		<div id="speaker-container">
+	      <form autocomplete="off" class="speaker-form">
+	        <div class="autocomplete">
+	          <input type="text" id="speaker-agenda-input">
+	        </div>
+	        <input type="submit" class="submit">
+	      </form>
+    	</div>
 		<hr>
 		<div class="themes">
 			<div class="theme red"><h3>red</h3></div>
@@ -241,6 +242,16 @@
 				<h2 class="room-title">Classroom</h2>
 			</div>
 		</div>
+		<script>
+			const form = document.querySelector(".speaker-form")
+			const formInput = document.getElementById("speaker-agenda-input")
+			form.addEventListener('submit', (event) => {
+			  event.preventDefault();
+			  console.log(formInput.value)
+			  });
+		</script>
+		<script src="speakers-json.js"></script> 
+		<script src="assets/js/autocomplete.js"></script>
 		<script src="assets/js/scrollDownBar.js"></script>
 		<script src="assets/js/highlightThemes.js"></script>
 	</body>
