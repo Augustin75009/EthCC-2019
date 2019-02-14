@@ -72,6 +72,11 @@
 
 
 @media screen and (max-width: 770px) {
+
+  .navbar-link {
+    font-size: 1em;
+  }
+
   #aboutContent {
     flex: 3;
     padding: 40px !important;
@@ -122,6 +127,10 @@
 
 
 @media screen and (max-width: 550px) {
+  .navbar-actions {
+    width: 50%;
+  }
+
   #aboutSection {
     display: flex;
     flex-direction: column !important;
@@ -307,7 +316,7 @@
   }
 
   .switch {
-  top: 68px !important;
+  top: 79px !important;
   left: 87% !important;
   }
 
