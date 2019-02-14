@@ -1,4 +1,10 @@
 @media screen and (max-width: 1030px) {
+  .room>div>h3 {
+  font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 1030px) {
   #banner {
     flex-direction: column-reverse !important;
     text-align: center
@@ -31,6 +37,8 @@
   .myInput {
     width: 83%;
   }
+
+
 }
 
 
@@ -97,11 +105,18 @@
   .autocomplete {
     width: 70%;
   }
+
+  .room>div>h3 {
+  font-size: 0.8rem !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
   #content {
     padding: 2rem 2rem 1.5rem 2rem !important;
+  }
+  .room>div>h3 {
+  font-size: 0.7rem !important;
   }
 }
 
@@ -187,13 +202,17 @@
   }
 
   .switch {
-  position: absolute !important;
-  top: 68px !important;
-  left: 87% !important;
+    position: absolute !important;
+    top: 68px !important;
+    left: 87% !important;
   }
 
   .foundElement {
     width: 100%;
+  }
+
+  #conference1-infos, #conference2-infos, #conference3-infos, #conference4-infos, #conference5-infos, #conference6-infos, #conference7-infos, #conference8-infos, #conference9-infos {
+    width: 60% !important;
   }
 
 
