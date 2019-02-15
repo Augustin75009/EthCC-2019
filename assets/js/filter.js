@@ -87,7 +87,8 @@ function speakerByTopic(element) {
 
   speakersRowFilter.innerHTML = ""
   counterOverSize = 0;
-  for (i = 0; i < 7; i++) { //replace by speakers.length in production
+  for (i = 0; i < speakers.length; i++) { //replace by speakers.length in production
+    console.log(speakers[i].topic.includes(element))
     console.log(speakers[i].topic.includes(element))
     if (speakers[i].topic.includes(element)) {
       if(speakers[i].link != undefined && speakers[i].link != '') {
