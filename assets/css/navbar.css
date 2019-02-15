@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 
 #logo {
@@ -44,17 +44,10 @@
   border-radius: 10px;
 }
 
-.navbar-actions>a {
-
-}
-
-.navbar-link {
-  font-size: 1.25em;
-}
-
 .navbar-link {
   text-align: center;
   width: 6em;
+  font-size: 1.15em;
   font-weight: 400;
   border: 1px solid #47D3E5;
   background: white;

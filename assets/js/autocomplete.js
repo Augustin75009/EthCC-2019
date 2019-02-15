@@ -102,6 +102,9 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
 }
-
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), speakers);
+if (document.getElementById("myInput")) {
+  autocomplete(document.getElementById("myInput"), speakers);
+} 
+if (document.getElementById("speaker-agenda-input")) {
+  autocomplete(document.getElementById("speaker-agenda-input"), speakers);
+}
