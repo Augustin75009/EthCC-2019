@@ -49,8 +49,9 @@ span.tooltiptext {
 }
 
 img.speaker.picture:hover {
-  transform: scale(1.05);
-  transition: all .4s ease-in-out;
+  transform: translateY(-2px);
+  /*opacity: 0.8;*/
+  transition: all .3s ease-in-out;
 }
 
 span.tooltiptext.showTooltip {
@@ -59,8 +60,5 @@ span.tooltiptext.showTooltip {
 }
 
 span.tooltiptext.showTooltip>ul>li>a {
-  /*position: absolute;*/
-  /*height: 20px;*/
-  /*width: 100px;*/
   background-color: #47D3E5;
 }
