@@ -59,8 +59,5 @@ span.tooltiptext.showTooltip {
 }
 
 span.tooltiptext.showTooltip>ul>li>a {
-  /*position: absolute;*/
-  /*height: 20px;*/
-  /*width: 100px;*/
   background-color: #47D3E5;
 }
