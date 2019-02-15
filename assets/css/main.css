@@ -303,3 +303,13 @@ ul.alt>li {
 .icons>li {
   padding: 0 0.75rem 0 0;
 }
+
+.communityWeek {
+  text-decoration: underline;
+  color: black;
+}
+
+.communityWeek:hover {
+  text-decoration: none;
+  color: #47D3E5;
+}
