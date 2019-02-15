@@ -64,13 +64,16 @@ input.myInput, {
   width: 200px !important;
 }
 
-
 .oversize>section>h3 {
   font-size: 1.5rem
 }
 
 .oversize>section>h5 {
   font-size: 1.2rem
+}
+
+.oversize>.tooltip>span {
+  transform: scale(1.5) translateY(-25px)
 }
 
 .foundElement {

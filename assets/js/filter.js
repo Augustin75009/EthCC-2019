@@ -17,7 +17,15 @@ for (i = 0; i < speakers.length; i++) {
   }
   document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
   document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
-  document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = speakers[i].name;
+  document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = "";
+  for (j = 0; j < speakers[i].title.length; j++) {
+    document.querySelector('#speakerTemplateAll .tooltiptext').insertAdjacentHTML("beforeend",
+    `<ul>
+      <li>${speakers[i].title[j]}</li>
+      <li>${speakers[i].slot[j]}</li>
+      <li><a href="${speakers[i].calendarLink[j]}">Add to calendar</a></li>
+    </ul>`);
+  }
   speakersRowFilter.appendChild(speakersTemplateFilter.childNodes[1].cloneNode(true));
 }
 
@@ -54,7 +62,15 @@ function speakerByName(element) {
       }
       document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
       document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
-      document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = speakers[i].name;
+      document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = "";
+      for (j = 0; j < speakers[i].title.length; j++) {
+        document.querySelector('#speakerTemplateAll .tooltiptext').insertAdjacentHTML("beforeend",
+        `<ul>
+          <li>${speakers[i].title[j]}</li>
+          <li>${speakers[i].slot[j]}</li>
+          <li><a href="${speakers[i].calendarLink[j]}">Add to calendar</a></li>
+        </ul>`);
+      }
       speakersRowFilter.appendChild(speakersTemplateFilter.childNodes[1].cloneNode(true));
       if (counterOverSize === 0) {
         speakersRowFilter.classList.add('oversize');
@@ -64,6 +80,7 @@ function speakerByName(element) {
       }
     }
   }
+  tooltipOpen()
 }
 
 function speakerByTopic(element) {
@@ -81,7 +98,15 @@ function speakerByTopic(element) {
       }
       document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
       document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
-      document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = speakers[i].name;
+      document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = "";
+      for (j = 0; j < speakers[i].title.length; j++) {
+        document.querySelector('#speakerTemplateAll .tooltiptext').insertAdjacentHTML("beforeend",
+        `<ul>
+          <li>${speakers[i].title[j]}</li>
+          <li>${speakers[i].slot[j]}</li>
+          <li><a href="${speakers[i].calendarLink[j]}">Add to calendar</a></li>
+        </ul>`);
+      }
       speakersRowFilter.appendChild(speakersTemplateFilter.childNodes[1].cloneNode(true));
       if (counterOverSize === 0) {
         speakersRowFilter.classList.add('oversize');
@@ -91,6 +116,7 @@ function speakerByTopic(element) {
       }
     }
   }
+  tooltipOpen()
 }
 
 function speakerAll(element) {
@@ -108,7 +134,25 @@ function speakerAll(element) {
     }
     document.querySelector('#speakerTemplateAll img').setAttribute('src', speakers[i].picture);
     document.querySelector('#speakerTemplateAll .company').innerHTML = speakers[i].company;
-    document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = speakers[i].name;
+    document.querySelector('#speakerTemplateAll .tooltiptext').innerHTML = "";
+    for (j = 0; j < speakers[i].title.length; j++) {
+        document.querySelector('#speakerTemplateAll .tooltiptext').insertAdjacentHTML("beforeend",
+        `<ul>
+          <li>${speakers[i].title[j]}</li>
+          <li>${speakers[i].slot[j]}</li>
+          <li><a href="${speakers[i].calendarLink[j]}">Add to calendar</a></li>
+        </ul>`);
+      }
     speakersRowFilter.appendChild(speakersTemplateFilter.childNodes[1].cloneNode(true));
   }
+  tooltipOpen()
+}
+
+
+function tooltipOpen() {
+  document.querySelectorAll(".tooltip").forEach((speaker) => {
+  speaker.addEventListener("click",  (event) => {
+    event.currentTarget.childNodes[7].classList.toggle('showTooltip');
+    });
+  });
 }

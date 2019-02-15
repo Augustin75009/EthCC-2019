@@ -64,6 +64,7 @@
   cursor: grab;
   background: white;
   z-index: 40;
+  line-height: 1.7;
 }
 
 .theme {
@@ -265,14 +266,16 @@
   font-weight: 600;
   width: 80%;
   justify-content: center;
-  text-align: center
+  text-align: center;
+  line-height: 1.2;
 }
 
 #conference1-infos>a, #conference2-infos>a, #conference3-infos>a, #conference4-infos>a, #conference5-infos>a, #conference6-infos>a, #conference7-infos>a, #conference8-infos>a, #conference9-infos>a {
   color: black;
   cursor: cell;
   z-index: 2;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 1 !important;
 }
 
 .lighter {

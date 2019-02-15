@@ -7,11 +7,16 @@
   opacity: 1;
   color: #47D3E5;
 }
+
+.name>a:hover {
+  text-decoration: underline;
+}
 /*-----------Toltip----------------*/
 
 .tooltip {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 span.tooltiptext {
@@ -25,7 +30,7 @@ span.tooltiptext {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 25%;
+  bottom: 27%;
   left: 50%;
   margin-left: -60px;
   opacity: 0;
@@ -35,7 +40,7 @@ span.tooltiptext {
 .tooltip span.tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 101%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -43,9 +48,19 @@ span.tooltiptext {
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover span.tooltiptext {
-  visibility: visible;
-  opacity: 1;
+img.speaker.picture:hover {
+  transform: scale(1.05);
+  transition: all .4s ease-in-out;
 }
 
+span.tooltiptext.showTooltip {
+  visibility: visible;
+  opacity: 0.85;
+}
 
+span.tooltiptext.showTooltip>ul>li>a {
+  /*position: absolute;*/
+  /*height: 20px;*/
+  /*width: 100px;*/
+  background-color: #47D3E5;
+}
