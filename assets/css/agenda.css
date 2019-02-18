@@ -141,7 +141,7 @@
   	display: grid;
   	width: 100%;
 	grid-template-rows: 1fr;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 80px 1fr;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	border-top: solid 0.5px #ccc;
@@ -152,12 +152,22 @@
 	grid-row: 1;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 56px repeat(138, 20px);
+	grid-template-rows: 55px repeat(138, 20px);
 	border-right: 1px solid #ccc;
 }
-.current-day{
+.timebar {
+	grid-column: 7;
+	grid-row: 1;
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 1fr;
+	grid-template-rows: 55px repeat(138, 20px);
+}
+.current-day{
+	display: block;
+}
+.rooms {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr) 80px;
 	grid-template-rows: 1fr;
 }
 .timebar-title {
@@ -185,7 +195,7 @@
 }
 
 .room>h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .room>div>h3 {
@@ -227,10 +237,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #47D3E5;
 	font-weight: bold;
+	color: #47D3E5;
 	border-bottom: 1px solid #ccc;
-  margin-bottom: 1px;
+  	margin-bottom: 1px;
 }
 
 .conference {
