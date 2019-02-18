@@ -11,8 +11,8 @@
 		</script>
 		<title>EthCC</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     	<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/components.css" />
 		<link rel="icon" type="image/png" href="favicon.ico" />
@@ -31,7 +31,7 @@
 		       </a>
 
 		       <!-- displayed on laptops -->
-		       <div class="navbar-actions d-none d-sm-flex">
+		       <div class="navbar-actions">
 		         <a href="agenda.html" class="navbar-link" id="btn-agenda">Agenda</a>
 		         <a href="speakers.html" class="navbar-link">Speakers</a>
 		       </div>
@@ -219,158 +219,793 @@
 				<div class="five-min">21h</div>
 			</div>
 			<div class="day5 current-day">
-				<div class="room painleve">
-					<h2 class="room-title">Paul Painlevé day5</h2>
-					<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
-			          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
-			          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
-			          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
-			          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
-					<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
-			          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
-			          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
-			          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
-					<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
-			          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
-			            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
-			          </div>
-	        		</div>
+				<div id="carousel" class="d-block d-md-none carousel slide" data-ride="carousel" data-interval="false">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+		      			<div class="room painleve">
+		      				<h2 class="room-title">Paul Painlevé day5</h2>
+		      				<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+		      		          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+		      		          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+		      		          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+		      		          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+		      				<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+		      		          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+		      		          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+		      		          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+		      				<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+		      		          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+		      		            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+		      		          </div>
+		              		</div>
+		      			</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room fourastie">
+						<h2 class="room-title">Jean Fourastié</h2>
+					</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room classroom">
+						<h2 class="room-title">Classroom</h2>
+					</div>
+				    </div>
+				  </div>
+				  
 				</div>
-				<div class="room say">
-					<h2 class="room-title">Jean-Baptiste Say</h2>
+				<div class="d-none d-md-block">
+					<div class="rooms">
+						<div class="room painleve">
+							<h2 class="room-title">Paul Painlevé day5</h2>
+							<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+					          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+					          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+					          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+					          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+							<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+					          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+					          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+					          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+							<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+					          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+					            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+					          </div>
+			        		</div>
+						</div>
+						<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
 
-				</div>
-				<div class="room faure">
-					<h2 class="room-title">Robert Faure</h2>
-				</div>
-				<div class="room gregoire">
-					<h2 class="room-title">Abbé Grégoire</h2>
-				</div>
-				<div class="room fourastie">
-					<h2 class="room-title">Jean Fourastié</h2>
-				</div>
-				<div class="room classroom">
-					<h2 class="room-title">Classroom</h2>
-				</div>
+						</div>
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+						<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+						<div class="room fourastie">
+							<h2 class="room-title">Jean Fourastié</h2>
+						</div>
+						<div class="room classroom">
+							<h2 class="room-title">Classroom</h2>
+						</div>
+						<div class="timebar">
+							<div class="timebar-title">Timeline</div>
+							<div class="five-min">9h30</div>
+							<div class="five-min">9h35</div>
+							<div class="five-min">9h40</div>
+							<div class="five-min">9h45</div>
+							<div class="five-min">9h50</div>
+							<div class="five-min">9h55</div>
+							<div class="five-min">10h</div>
+							<div class="five-min">10h05</div>
+							<div class="five-min">10h10</div>
+							<div class="five-min">10h15</div>
+							<div class="five-min">10h20</div>
+							<div class="five-min">10h25</div>
+							<div class="five-min">10h30</div>
+							<div class="five-min">10h35</div>
+							<div class="five-min">10h40</div>
+							<div class="five-min">10h45</div>
+							<div class="five-min">10h50</div>
+							<div class="five-min">10h55</div>
+							<div class="five-min">11h00</div>
+							<div class="five-min">11h05</div>
+							<div class="five-min">11h10</div>
+							<div class="five-min">11h15</div>
+							<div class="five-min">11h20</div>
+							<div class="five-min">11h25</div>
+							<div class="five-min">11h30</div>
+							<div class="five-min">11h35</div>
+							<div class="five-min">11h40</div>
+							<div class="five-min">11h45</div>
+							<div class="five-min">11h50</div>
+							<div class="five-min">11h55</div>
+							<div class="five-min">12h00</div>
+							<div class="five-min">12h05</div>
+							<div class="five-min">12h10</div>
+							<div class="five-min">12h15</div>
+							<div class="five-min">12h20</div>
+							<div class="five-min">12h25</div>
+							<div class="five-min">12h30</div>
+							<div class="five-min">12h35</div>
+							<div class="five-min">12h40</div>
+							<div class="five-min">12h45</div>
+							<div class="five-min">12h50</div>
+							<div class="five-min">12h55</div>
+							<div class="five-min">13h00</div>
+							<div class="five-min">13h05</div>
+							<div class="five-min">13h10</div>
+							<div class="five-min">13h15</div>
+							<div class="five-min">13h20</div>
+							<div class="five-min">13h25</div>
+							<div class="five-min">13h30</div>
+							<div class="five-min">13h35</div>
+							<div class="five-min">13h40</div>
+							<div class="five-min">13h45</div>
+							<div class="five-min">13h50</div>
+							<div class="five-min">13h55</div>
+							<div class="five-min">14h00</div>
+							<div class="five-min">14h05</div>
+							<div class="five-min">14h10</div>
+							<div class="five-min">14h15</div>
+							<div class="five-min">14h20</div>
+							<div class="five-min">14h25</div>
+							<div class="five-min">14h30</div>
+							<div class="five-min">14h35</div>
+							<div class="five-min">14h40</div>
+							<div class="five-min">14h45</div>
+							<div class="five-min">14h50</div>
+							<div class="five-min">14h55</div>
+							<div class="five-min">15h00</div>
+							<div class="five-min">15h05</div>
+							<div class="five-min">15h10</div>
+							<div class="five-min">15h15</div>
+							<div class="five-min">15h20</div>
+							<div class="five-min">15h25</div>
+							<div class="five-min">15h30</div>
+							<div class="five-min">15h35</div>
+							<div class="five-min">15h40</div>
+							<div class="five-min">15h45</div>
+							<div class="five-min">15h50</div>
+							<div class="five-min">15h55</div>
+							<div class="five-min">16h00</div>
+							<div class="five-min">16h05</div>
+							<div class="five-min">16h10</div>
+							<div class="five-min">16h15</div>
+							<div class="five-min">16h20</div>
+							<div class="five-min">16h25</div>
+							<div class="five-min">16h30</div>
+							<div class="five-min">16h35</div>
+							<div class="five-min">16h40</div>
+							<div class="five-min">16h45</div>
+							<div class="five-min">16h50</div>
+							<div class="five-min">16h55</div>
+							<div class="five-min">17h00</div>
+							<div class="five-min">17h05</div>
+							<div class="five-min">17h10</div>
+							<div class="five-min">17h15</div>
+							<div class="five-min">17h20</div>
+							<div class="five-min">17h25</div>
+							<div class="five-min">17h30</div>
+							<div class="five-min">17h35</div>
+							<div class="five-min">17h40</div>
+							<div class="five-min">17h45</div>
+							<div class="five-min">17h50</div>
+							<div class="five-min">17h55</div>
+							<div class="five-min">18h00</div>
+							<div class="five-min">18h05</div>
+							<div class="five-min">18h10</div>
+							<div class="five-min">18h15</div>
+							<div class="five-min">18h20</div>
+							<div class="five-min">18h25</div>
+							<div class="five-min">18h30</div>
+							<div class="five-min">18h35</div>
+							<div class="five-min">18h40</div>
+							<div class="five-min">18h45</div>
+							<div class="five-min">18h50</div>
+							<div class="five-min">18h55</div>
+							<div class="five-min">19h00</div>
+							<div class="five-min">19h05</div>
+							<div class="five-min">19h10</div>
+							<div class="five-min">19h15</div>
+							<div class="five-min">19h20</div>
+							<div class="five-min">19h25</div>
+							<div class="five-min">19h30</div>
+							<div class="five-min">19h35</div>
+							<div class="five-min">19h40</div>
+							<div class="five-min">19h45</div>
+							<div class="five-min">19h50</div>
+							<div class="five-min">19h55</div>
+							<div class="five-min">20h00</div>
+							<div class="five-min">20h05</div>
+							<div class="five-min">20h10</div>
+							<div class="five-min">20h15</div>
+							<div class="five-min">20h20</div>
+							<div class="five-min">20h25</div>
+							<div class="five-min">20h30</div>
+							<div class="five-min">20h35</div>
+							<div class="five-min">20h40</div>
+							<div class="five-min">20h45</div>
+							<div class="five-min">20h50</div>
+							<div class="five-min">20h55</div>
+							<div class="five-min">21h</div>
+						</div>
+					</div>
+				</div>	
 			</div>
 			<div class="day6 hidden">
-				<div class="room painleve">
-					<h2 class="room-title">Paul Painlevé day6</h2>
-					<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
-			          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
-			          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
-			          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
-			          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
-					<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
-			          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
-			          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
-			          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
-					<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
-			          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
-			            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
-			          </div>
-	        		</div>
+				<div id="carousel" class="d-block d-md-none carousel slide" data-ride="carousel" data-interval="false"> 
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+		      			<div class="room painleve">
+		      				<h2 class="room-title">Paul Painlevé day6</h2>
+		      				<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+		      		          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+		      		          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+		      		          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+		      		          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+		      				<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+		      		          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+		      		          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+		      		          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+		      				<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+		      		          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+		      		            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+		      		          </div>
+		              		</div>
+		      			</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room fourastie">
+						<h2 class="room-title">Jean Fourastié</h2>
+					</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room classroom">
+						<h2 class="room-title">Classroom</h2>
+					</div>
+				    </div>
+				  </div>
+				  
 				</div>
-				<div class="room">
-					<h2 class="room-title">Jean-Baptiste Say</h2>
+				<div class="d-none d-md-block">
+					<div class="rooms">
+						<div class="room painleve">
+							<h2 class="room-title">Paul Painlevé day6</h2>
+							<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+					          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+					          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+					          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+					          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+							<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+					          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+					          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+					          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+							<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+					          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+					            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+					          </div>
+			        		</div>
+						</div>
+						<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
 
-				</div>
-				<div class="room">
-					<h2 class="room-title">Robert Faure</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Abbé Grégoirey</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Jean Fourastié</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Classroom</h2>
-				</div>
+						</div>
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+						<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+						<div class="room fourastie">
+							<h2 class="room-title">Jean Fourastié</h2>
+						</div>
+						<div class="room classroom">
+							<h2 class="room-title">Classroom</h2>
+						</div>
+						<div class="timebar">
+							<div class="timebar-title">Timeline</div>
+							<div class="five-min">9h30</div>
+							<div class="five-min">9h35</div>
+							<div class="five-min">9h40</div>
+							<div class="five-min">9h45</div>
+							<div class="five-min">9h50</div>
+							<div class="five-min">9h55</div>
+							<div class="five-min">10h</div>
+							<div class="five-min">10h05</div>
+							<div class="five-min">10h10</div>
+							<div class="five-min">10h15</div>
+							<div class="five-min">10h20</div>
+							<div class="five-min">10h25</div>
+							<div class="five-min">10h30</div>
+							<div class="five-min">10h35</div>
+							<div class="five-min">10h40</div>
+							<div class="five-min">10h45</div>
+							<div class="five-min">10h50</div>
+							<div class="five-min">10h55</div>
+							<div class="five-min">11h00</div>
+							<div class="five-min">11h05</div>
+							<div class="five-min">11h10</div>
+							<div class="five-min">11h15</div>
+							<div class="five-min">11h20</div>
+							<div class="five-min">11h25</div>
+							<div class="five-min">11h30</div>
+							<div class="five-min">11h35</div>
+							<div class="five-min">11h40</div>
+							<div class="five-min">11h45</div>
+							<div class="five-min">11h50</div>
+							<div class="five-min">11h55</div>
+							<div class="five-min">12h00</div>
+							<div class="five-min">12h05</div>
+							<div class="five-min">12h10</div>
+							<div class="five-min">12h15</div>
+							<div class="five-min">12h20</div>
+							<div class="five-min">12h25</div>
+							<div class="five-min">12h30</div>
+							<div class="five-min">12h35</div>
+							<div class="five-min">12h40</div>
+							<div class="five-min">12h45</div>
+							<div class="five-min">12h50</div>
+							<div class="five-min">12h55</div>
+							<div class="five-min">13h00</div>
+							<div class="five-min">13h05</div>
+							<div class="five-min">13h10</div>
+							<div class="five-min">13h15</div>
+							<div class="five-min">13h20</div>
+							<div class="five-min">13h25</div>
+							<div class="five-min">13h30</div>
+							<div class="five-min">13h35</div>
+							<div class="five-min">13h40</div>
+							<div class="five-min">13h45</div>
+							<div class="five-min">13h50</div>
+							<div class="five-min">13h55</div>
+							<div class="five-min">14h00</div>
+							<div class="five-min">14h05</div>
+							<div class="five-min">14h10</div>
+							<div class="five-min">14h15</div>
+							<div class="five-min">14h20</div>
+							<div class="five-min">14h25</div>
+							<div class="five-min">14h30</div>
+							<div class="five-min">14h35</div>
+							<div class="five-min">14h40</div>
+							<div class="five-min">14h45</div>
+							<div class="five-min">14h50</div>
+							<div class="five-min">14h55</div>
+							<div class="five-min">15h00</div>
+							<div class="five-min">15h05</div>
+							<div class="five-min">15h10</div>
+							<div class="five-min">15h15</div>
+							<div class="five-min">15h20</div>
+							<div class="five-min">15h25</div>
+							<div class="five-min">15h30</div>
+							<div class="five-min">15h35</div>
+							<div class="five-min">15h40</div>
+							<div class="five-min">15h45</div>
+							<div class="five-min">15h50</div>
+							<div class="five-min">15h55</div>
+							<div class="five-min">16h00</div>
+							<div class="five-min">16h05</div>
+							<div class="five-min">16h10</div>
+							<div class="five-min">16h15</div>
+							<div class="five-min">16h20</div>
+							<div class="five-min">16h25</div>
+							<div class="five-min">16h30</div>
+							<div class="five-min">16h35</div>
+							<div class="five-min">16h40</div>
+							<div class="five-min">16h45</div>
+							<div class="five-min">16h50</div>
+							<div class="five-min">16h55</div>
+							<div class="five-min">17h00</div>
+							<div class="five-min">17h05</div>
+							<div class="five-min">17h10</div>
+							<div class="five-min">17h15</div>
+							<div class="five-min">17h20</div>
+							<div class="five-min">17h25</div>
+							<div class="five-min">17h30</div>
+							<div class="five-min">17h35</div>
+							<div class="five-min">17h40</div>
+							<div class="five-min">17h45</div>
+							<div class="five-min">17h50</div>
+							<div class="five-min">17h55</div>
+							<div class="five-min">18h00</div>
+							<div class="five-min">18h05</div>
+							<div class="five-min">18h10</div>
+							<div class="five-min">18h15</div>
+							<div class="five-min">18h20</div>
+							<div class="five-min">18h25</div>
+							<div class="five-min">18h30</div>
+							<div class="five-min">18h35</div>
+							<div class="five-min">18h40</div>
+							<div class="five-min">18h45</div>
+							<div class="five-min">18h50</div>
+							<div class="five-min">18h55</div>
+							<div class="five-min">19h00</div>
+							<div class="five-min">19h05</div>
+							<div class="five-min">19h10</div>
+							<div class="five-min">19h15</div>
+							<div class="five-min">19h20</div>
+							<div class="five-min">19h25</div>
+							<div class="five-min">19h30</div>
+							<div class="five-min">19h35</div>
+							<div class="five-min">19h40</div>
+							<div class="five-min">19h45</div>
+							<div class="five-min">19h50</div>
+							<div class="five-min">19h55</div>
+							<div class="five-min">20h00</div>
+							<div class="five-min">20h05</div>
+							<div class="five-min">20h10</div>
+							<div class="five-min">20h15</div>
+							<div class="five-min">20h20</div>
+							<div class="five-min">20h25</div>
+							<div class="five-min">20h30</div>
+							<div class="five-min">20h35</div>
+							<div class="five-min">20h40</div>
+							<div class="five-min">20h45</div>
+							<div class="five-min">20h50</div>
+							<div class="five-min">20h55</div>
+							<div class="five-min">21h</div>
+						</div>
+					</div>
+				</div>	
+
 			</div>
 			<div class="day7 hidden">
-				<div class="room painleve">
-					<h2 class="room-title">Paul Painlevé day7</h2>
-					<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
-			          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
-			          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
-			          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
-			          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
-					<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
-			          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
-			          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
-			          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
-					<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
-			          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
-			        </div>
-					<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
-			            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
-			          </div>
-	        		</div>
+				<div id="carousel" class="d-block d-md-none carousel slide" data-ride="carousel" data-interval="false">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+		      			<div class="room painleve">
+		      				<h2 class="room-title">Paul Painlevé day7</h2>
+		      				<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+		      		          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+		      		          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+		      		          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+		      		          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+		      				<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+		      		          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+		      		          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+		      		          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+		      				<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+		      		          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+		      		        </div>
+		      				<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+		      		            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+		      		          </div>
+		              		</div>
+		      			</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room fourastie">
+						<h2 class="room-title">Jean Fourastié</h2>
+					</div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="room classroom">
+						<h2 class="room-title">Classroom</h2>
+					</div>
+				    </div>
+				  </div>
+				  
 				</div>
-				<div class="room">
-					<h2 class="room-title">Jean-Baptiste Say</h2>
+				<div class="d-none d-md-block">
+					<div class="rooms">
+						<div class="room painleve">
+							<h2 class="room-title">Paul Painlevé day7</h2>
+							<div id="conference1" class="conference black"><h3>Lane Rettig - Ethereum will save the world. Here's how.</h3>
+					          <div id="conference1-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference2" class="conference purple"><h3>Justin Drake - Ethereum 2.0—the phase 0 spec</h3>
+					          <div id="conference2-infos" class="conference black SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference3" class="conference light-blue"><h3>Charles Hamel - Open your Dapp to 100 million users</h3>
+					          <div id="conference3-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference4" class="conference yellow"><h3>Evan Van Ness  -Things I want to see at the app layer</h3>
+					          <div id="conference4-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break1" class="break"><h3>LUNCH BREAK</h3></div>
+							<div id="conference5" class="conference red"><h3>Philipp Langhans - Update from the Mist team</h3>
+					          <div id="conference5-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference6" class="conference black"><h3>Miyaguchi Aya - Communication from the Ethereum Foundation</h3>
+					          <div id="conference6-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference7" class="conference purple"><h3>Vlad - Tech Talk on Scalability</h3>
+					          <div id="conference7-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="break2" class="break"><h3>COFFEE BREAK</h3></div>
+							<div id="conference8" class="conference blue"><h3>Kevin Owocki - Mesh Network of Human Beings</h3>
+					          <div id="conference8-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a></div>
+					        </div>
+							<div id="conference9" class="conference black"><h3>Eseoghene Mentie - What we can learn from ancient decentralised civilisation</h3>
+					            <div id="conference9-infos" class="SlotHidden"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bithday&dates=20201231T193000Z/20201231T223000Z&details=With%20clowns%20and%20stuff&location=North%20Pole" target="_blank">Add to my calendar</a>
+					          </div>
+			        		</div>
+						</div>
+						<div class="room say">
+							<h2 class="room-title">Jean-Baptiste Say</h2>
 
-				</div>
-				<div class="room">
-					<h2 class="room-title">Robert Faure</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Abbé Grégoirey</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Jean Fourastié</h2>
-				</div>
-				<div class="room">
-					<h2 class="room-title">Classroom</h2>
-				</div>
+						</div>
+						<div class="room faure">
+							<h2 class="room-title">Robert Faure</h2>
+						</div>
+						<div class="room gregoire">
+							<h2 class="room-title">Abbé Grégoire</h2>
+						</div>
+						<div class="room fourastie">
+							<h2 class="room-title">Jean Fourastié</h2>
+						</div>
+						<div class="room classroom">
+							<h2 class="room-title">Classroom</h2>
+						</div>
+						<div class="timebar">
+							<div class="timebar-title">Timeline</div>
+							<div class="five-min">9h30</div>
+							<div class="five-min">9h35</div>
+							<div class="five-min">9h40</div>
+							<div class="five-min">9h45</div>
+							<div class="five-min">9h50</div>
+							<div class="five-min">9h55</div>
+							<div class="five-min">10h</div>
+							<div class="five-min">10h05</div>
+							<div class="five-min">10h10</div>
+							<div class="five-min">10h15</div>
+							<div class="five-min">10h20</div>
+							<div class="five-min">10h25</div>
+							<div class="five-min">10h30</div>
+							<div class="five-min">10h35</div>
+							<div class="five-min">10h40</div>
+							<div class="five-min">10h45</div>
+							<div class="five-min">10h50</div>
+							<div class="five-min">10h55</div>
+							<div class="five-min">11h00</div>
+							<div class="five-min">11h05</div>
+							<div class="five-min">11h10</div>
+							<div class="five-min">11h15</div>
+							<div class="five-min">11h20</div>
+							<div class="five-min">11h25</div>
+							<div class="five-min">11h30</div>
+							<div class="five-min">11h35</div>
+							<div class="five-min">11h40</div>
+							<div class="five-min">11h45</div>
+							<div class="five-min">11h50</div>
+							<div class="five-min">11h55</div>
+							<div class="five-min">12h00</div>
+							<div class="five-min">12h05</div>
+							<div class="five-min">12h10</div>
+							<div class="five-min">12h15</div>
+							<div class="five-min">12h20</div>
+							<div class="five-min">12h25</div>
+							<div class="five-min">12h30</div>
+							<div class="five-min">12h35</div>
+							<div class="five-min">12h40</div>
+							<div class="five-min">12h45</div>
+							<div class="five-min">12h50</div>
+							<div class="five-min">12h55</div>
+							<div class="five-min">13h00</div>
+							<div class="five-min">13h05</div>
+							<div class="five-min">13h10</div>
+							<div class="five-min">13h15</div>
+							<div class="five-min">13h20</div>
+							<div class="five-min">13h25</div>
+							<div class="five-min">13h30</div>
+							<div class="five-min">13h35</div>
+							<div class="five-min">13h40</div>
+							<div class="five-min">13h45</div>
+							<div class="five-min">13h50</div>
+							<div class="five-min">13h55</div>
+							<div class="five-min">14h00</div>
+							<div class="five-min">14h05</div>
+							<div class="five-min">14h10</div>
+							<div class="five-min">14h15</div>
+							<div class="five-min">14h20</div>
+							<div class="five-min">14h25</div>
+							<div class="five-min">14h30</div>
+							<div class="five-min">14h35</div>
+							<div class="five-min">14h40</div>
+							<div class="five-min">14h45</div>
+							<div class="five-min">14h50</div>
+							<div class="five-min">14h55</div>
+							<div class="five-min">15h00</div>
+							<div class="five-min">15h05</div>
+							<div class="five-min">15h10</div>
+							<div class="five-min">15h15</div>
+							<div class="five-min">15h20</div>
+							<div class="five-min">15h25</div>
+							<div class="five-min">15h30</div>
+							<div class="five-min">15h35</div>
+							<div class="five-min">15h40</div>
+							<div class="five-min">15h45</div>
+							<div class="five-min">15h50</div>
+							<div class="five-min">15h55</div>
+							<div class="five-min">16h00</div>
+							<div class="five-min">16h05</div>
+							<div class="five-min">16h10</div>
+							<div class="five-min">16h15</div>
+							<div class="five-min">16h20</div>
+							<div class="five-min">16h25</div>
+							<div class="five-min">16h30</div>
+							<div class="five-min">16h35</div>
+							<div class="five-min">16h40</div>
+							<div class="five-min">16h45</div>
+							<div class="five-min">16h50</div>
+							<div class="five-min">16h55</div>
+							<div class="five-min">17h00</div>
+							<div class="five-min">17h05</div>
+							<div class="five-min">17h10</div>
+							<div class="five-min">17h15</div>
+							<div class="five-min">17h20</div>
+							<div class="five-min">17h25</div>
+							<div class="five-min">17h30</div>
+							<div class="five-min">17h35</div>
+							<div class="five-min">17h40</div>
+							<div class="five-min">17h45</div>
+							<div class="five-min">17h50</div>
+							<div class="five-min">17h55</div>
+							<div class="five-min">18h00</div>
+							<div class="five-min">18h05</div>
+							<div class="five-min">18h10</div>
+							<div class="five-min">18h15</div>
+							<div class="five-min">18h20</div>
+							<div class="five-min">18h25</div>
+							<div class="five-min">18h30</div>
+							<div class="five-min">18h35</div>
+							<div class="five-min">18h40</div>
+							<div class="five-min">18h45</div>
+							<div class="five-min">18h50</div>
+							<div class="five-min">18h55</div>
+							<div class="five-min">19h00</div>
+							<div class="five-min">19h05</div>
+							<div class="five-min">19h10</div>
+							<div class="five-min">19h15</div>
+							<div class="five-min">19h20</div>
+							<div class="five-min">19h25</div>
+							<div class="five-min">19h30</div>
+							<div class="five-min">19h35</div>
+							<div class="five-min">19h40</div>
+							<div class="five-min">19h45</div>
+							<div class="five-min">19h50</div>
+							<div class="five-min">19h55</div>
+							<div class="five-min">20h00</div>
+							<div class="five-min">20h05</div>
+							<div class="five-min">20h10</div>
+							<div class="five-min">20h15</div>
+							<div class="five-min">20h20</div>
+							<div class="five-min">20h25</div>
+							<div class="five-min">20h30</div>
+							<div class="five-min">20h35</div>
+							<div class="five-min">20h40</div>
+							<div class="five-min">20h45</div>
+							<div class="five-min">20h50</div>
+							<div class="five-min">20h55</div>
+							<div class="five-min">21h</div>
+						</div>
+					</div>
+				</div>			
 			</div>
+
 			
 		</div>
 		<!-- <script>
@@ -402,6 +1037,12 @@
 			})
 			
 		</script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="jquery.bcSwipe.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script>$('#carousel').bcSwipe({ threshold: 50 });</script>
 		<script src="speakers-json.js"></script> 
 		<script src="assets/js/autocomplete.js"></script>
 		<script src="assets/js/scrollDownBar.js"></script>
